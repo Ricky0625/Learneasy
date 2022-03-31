@@ -1,0 +1,952 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.course-tabs {
+  margin: 0px 14.3229vw;
+  margin-top: 30px;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  border: none;
+  float: left;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  margin-right: 40px;
+  background-color: transparent;
+  color: #2D3B4C;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgba(45, 59, 76, 0.1);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border-bottom: 5px solid #ff6b58;
+  color: #2D3B4C;
+}
+
+/* Style the tab content */
+.tabcontent {
+  font-family: 'Nunito', sans-serif;
+  display: none;
+  padding: 45px 60px;
+}
+
+/*The title of each section. For examples, "About the class", "Reminder"*/
+.tab-titles {
+  margin: 0;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  color: #2D3B4C;
+}
+
+/*The paragraphs in the tabs*/
+.tab-paragraph {
+  margin: 0;
+  padding: 10px 0px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #2D3B4C;
+  text-align: justify;
+}
+
+.flexbox-for-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-course {
+  width: 70%;
+  margin: 0;
+}
+
+.about-teacher {
+  width: 25%;
+  margin: 0;
+}
+
+/*Div for teacher profile pic and name*/
+.profile-and-name {
+  display: flex;
+  align-items: center;
+}
+
+/*Teacher's profile picture*/
+.about-teacher img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/*Teacher's Name*/
+#teacher-name {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+  color: #2D3B4C;
+  margin-left: 14px;
+  cursor: pointer;
+}
+
+/*Teacher's bio*/
+#teacher-bio {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: justify;
+  color: #2d3b4ca7;
+}
+
+#ratings {
+  margin: auto;
+}
+
+.en-course-rating {
+  width: 52.7vw;
+  margin: 0 auto;
+}
+
+.en-sec-title-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#give-rating-btn {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.17vw;
+  line-height: 1.63vw;
+  outline: none;
+  border: none;
+  background-color:#FA8474;
+  color: #fff;
+  padding: 0.33vw 1.042vw;
+  cursor: pointer;
+  border-radius: 0.33vw;
+  transition: 0.2s ease-in-out;
+}
+
+#give-rating-btn:hover {
+  background-color: #FF6B58;
+}
+
+.en-section-title {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.432vw;
+  line-height: 1.953vw;
+  color: #2D3B4C;
+}
+
+.rating-and-chart {
+  margin-top: 1.3vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.en-rating-value {
+  width: 18.88vw;
+  height: 13.54vw;
+  border: 0.26vw solid #2D3B4C;
+  box-sizing: border-box;
+  border-radius: 1.3vw;
+}
+
+.center-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.93vw;
+}
+
+.center-div p {
+  margin: 0;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.34vw;
+  line-height: 3.19vw;
+  color: #2D3B4C;
+}
+
+.en-star-value {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  color: #FF6B58;
+}
+
+.en-star-value i {
+  font-size: 2.083vw;
+  margin-bottom: 0.33vw;
+}
+
+.en-star-value span {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.995vw;
+  line-height: 1.05vw;
+}
+
+.num-of-review {
+  margin-top: 0.65vw;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.91vw;
+  line-height: 1.04vw;
+  color: rgba(45, 59, 76, 0.5);
+}
+
+.rating-chart {
+  width: 31.9vw;
+  height: 13.54vw;
+  border: 0.26vw solid #2D3B4C;
+  box-sizing: border-box;
+  border-radius: 1.3vw;
+  padding: 1.17vw 2.21vw 1.953vw 2.21vw;
+}
+
+.chart-title {
+  margin: 0;
+  margin-bottom: 0.65vw;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.17vw;
+  line-height: 1.63vw;
+  color: #2D3B4C;
+}
+
+.chart-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rating-num{
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.17vw;
+  line-height: 1.63vw;
+  color: #2D3B4C;
+  margin-right: 1.693vw;
+}
+
+.chart-bar {
+  position: relative;
+}
+
+.orange-bar {
+  position: absolute;
+  height: 0.91vw;
+  background-color: #FF6B58;
+}
+
+.bar-5 {
+  width: 13.35vw;
+}
+
+.bar-4 {
+  width: 7.68vw;
+}
+
+.bar-3 {
+  width: 4.3vw;
+}
+
+.bar-2 {
+  width: 1.5625vw;
+}
+.bar-1 {
+  width: 0.98vw;
+}
+
+.grey-bar {
+  width: 22.786vw;
+  height: 0.91vw;
+  background-color: #C4C4C4;
+}
+
+.rating-count {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.17vw;
+  line-height: 1.63vw;
+  color: #2d3b4cc9;
+  margin-left: 0.78vw;
+}
+
+.student-ratings {
+  width: 53.5vw;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  flex-wrap: wrap;
+}
+
+.rating-border {
+  padding: 20px 30px;
+  width: 395px;
+  height:210px;
+  background-color: #fff;
+  border: 2px solid rgba(45, 59, 76, 0.8);
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.pic-name-date-rate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.who-profile-pic {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.username-and-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 268px;
+}
+
+.username-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.who-post {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #2D3B4C;
+}
+
+.post-date {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(45, 59, 76, 0.5);
+}
+
+.student-rating-star {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+}
+
+.student-rating-star span {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  color: #263238;
+}
+
+.student-rating-star i {
+  color: #FF6B58;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.rating-comment {
+  margin: 0;
+  margin-top: 10px;
+  height: 105px;
+  width: 100%;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.qna-tab {
+  margin: 0 auto;
+  width: 860px;
+}
+
+.qna-title-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 860px;
+  height: fit-content;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.question-form{
+  width: 860px;
+}
+
+.qna-title {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  color: #2D3B4C;
+  margin: 0;
+}
+
+#ask-question {
+  width: 860px;
+  height: 125px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #2D3B4C;
+  padding: 16px 26px;
+  border: 1px solid #2D3B4C;
+  box-sizing: border-box;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.2s ease-in;
+  resize: none;
+  overflow: auto;
+}
+
+#ask-question:focus {
+  border: 1px solid #FF6B58;
+}
+
+#ask-question::placeholder {
+  font-style: italic;
+}
+
+#post-question {
+  padding: 6px 14px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  outline: none;
+  border: none;
+  background-color: #FA8474;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  transition: 0.2s ease-in-out;
+}
+
+#post-question:hover {
+  background-color: #FF6B58;
+}
+
+.question-count {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FF6B58;
+  margin-top: 28px;
+  margin-bottom: 18px;
+}
+
+.question-list {
+  width: 860px;
+}
+
+.question-template {
+  padding: 10px 30px;
+  width: 800px;
+}
+
+.question-template p{
+  width: 100%;
+  height: fit-content;
+}
+
+.post-info {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+}
+
+.question-template img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post-owner {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.post-date {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.post-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.owner-date {
+  margin-left: 10px;
+  width: 230px;
+  justify-content: space-between;
+}
+
+.comment-link i, .comment-link span{
+  color: #FA8474;
+}
+
+.comment-link:hover i,.comment-link:hover span{
+  color: #FF6B58;
+}
+
+.comment-link a {
+  text-decoration: none;
+}
+
+.comment-link i {
+  font-size: 20px;
+  margin-right: 5px;
+  transition: 0.2s ease-in-out;
+}
+
+.comment-link span {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+  transition: 0.2s ease-in-out;
+}
+
+.question-list-hr {
+  margin: 5px 0;
+  border: rgba(45, 59, 76, 0.4) 1px solid;
+}
+
+.resource-quiz-section {
+  width: 860px;
+  margin: 0 auto;
+}
+
+.resource-list {
+  margin-bottom: 40px;
+}
+
+.res-quiz-title {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  color: #2D3B4C;
+  margin: 0;
+}
+
+.res-quiz-sub {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(45, 59, 76, 0.6);
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.resource-hr {
+  margin: 10px 0;
+  height: 2px;
+  background-color: rgba(45, 59, 76, 0.4);
+  border: none;
+}
+
+.resource-file {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 30px;
+  color: #ff6b58;
+}
+
+.resource-file i {
+  margin-right: 12px;
+  font-size: 22px;
+}
+
+.resource-file a {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #FF6B58;
+  transition: 0.2s ease-in-out;
+}
+
+.resource-file a:hover {
+  text-decoration: underline;
+}
+
+.quiz-card-list {
+  width: 860px;
+  margin-top: 15px;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.quiz-card {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(45, 59, 76, 0.35);
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+  margin: 10px 7px;
+}
+
+.quiz-card:hover {
+  transform: scale(1.05);
+}
+
+.link-to-course {
+  text-decoration: none;
+}
+
+.quiz-pic-qs {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+}
+
+.quiz-pic-qs img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+  position: absolute;
+}
+
+.quiz-ques-num {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  background-color: rgba(45,59,76,0.8);
+  padding: 2px 10px;
+  width: fit-content;
+  height: 49px;
+  border-radius: 10px;
+  position: relative;
+  top: 70px;
+  left: 140px;
+}
+
+.quiz-name-owner {
+  width: 180px;
+  height: 84px;
+  border-radius: 0 0 5px 5px;
+  padding: 6px 10px 10px 10px;
+}
+
+.quiz-name {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  margin: 0;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3B4C;
+}
+
+.quiz-owner-author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.quiz-owner {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 5px;
+}
+
+.quiz-author {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2D3B4C;
+}
+
+.tab-empty-state {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.tab-empty-state img {
+  margin-top: 20px;
+  width: 200px;
+}
+
+.tab-empty-state p {
+  text-align: center;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3B4C;
+}
+
+.progress-title-viewall{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-title-viewall p {
+font-family: Nunito;
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 33px;
+color: #2D3B4C;
+}
+
+.progress-title-viewall button {
+font-family: Nunito;
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 25px;
+color: #FFFFFF;
+outline: none;
+background-color:#FA8474;
+border: none;
+border-radius: 5px;
+padding: 8px 24px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.progress-title-viewall button:hover {
+  background-color: #FF6B58;
+}
+
+.prog-stud-info{
+  display: flex;
+  align-items: center;
+  padding: 0 35px;
+}
+
+.prog-stud-info img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #C4C4C4;
+}
+
+.prog-name {
+  margin-left: 15px;
+}
+
+.prog-name p{
+  margin: 0;
+  width: 200px;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.prog-stud-fullname{
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #2D3B4C;
+}
+
+.prog-stud-username{
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(45, 59, 76, 0.6);
+}
+
+.prog-stud-date {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(45, 59, 76, 0.6);
+}
+
+.progress-bars {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 0 0 auto;
+}
+
+.prog-stud-bar {
+  position: relative;
+}
+
+.prog-stud-grey-bar{
+  width: 290px;
+  height: 30px;
+  background-color: #C4C4C4;
+  border-radius: 5px;
+  text-align: center;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+/*
+.prog-stud-orange-bar{
+  position: absolute;
+  height: 30px;
+  width: 200px;
+  background-color: #FF6B58;
+  border-radius: 5px;
+  text-align: center;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 3px;
+}
+*/
+
+.progress-seperator {
+  margin: 15px 0;
+  border-top: 1px solid rgba(45, 59, 76, 0.4);
+  border-bottom: 1px solid rgba(45, 59, 76, 0.4);
+  color: rgba(45, 59, 76, 0.4);
+  border-radius: 15px;
+  background-color:rgba(45, 59, 76, 0.4);
+}
+
+.stats-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stats-box {
+  width: 290px;
+  height: 210px;
+  padding: 23px 36px;
+  border: #2D3B4C 4px solid;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.stats-label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2D3B4C;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.stats-value {
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FF6B58;
+  margin: 0;
+  margin-top: 22px;
+}
+
+.progress-list-section {
+  padding: 0 250px;
+  margin-bottom: 200px;
+}

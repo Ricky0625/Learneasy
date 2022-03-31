@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/*Edit Profile button*/
+#rating-button{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.17vw;
+    line-height: 1.627vw;
+    color: #fff;
+    outline: none;
+    background-color: #FF6B58;
+    border: none;
+    border-radius: 0.325vw;
+    padding: 0.26vw 0.78vw 0.2vw 0.78vw;
+    cursor: pointer;
+}
+
+#rating-button i {
+    font-size: 1.04vw;
+    margin-left: 0.32vw;
+
+}
+
+/* The Modal (background) */
+.rating-modal-overall {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 4.55vw; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(255, 255, 255); /* Fallback color */
+    background-color: rgba(255, 255, 255, 0.5); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.rating-modal-content {
+    background: rgba( 45, 59, 76, 0.00 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.6vw );
+    -webkit-backdrop-filter: blur( 2.6vw );
+    border-radius: 0.65vw;
+    margin: auto;
+    width: 52.08vw;
+    height: 80%;
+    overflow: auto;
+}
+
+/*The Modal banner*/
+.rating-modal-top-banner {
+    margin: 0;
+    padding: 1.3vw 1.76vw;
+    background-color: #2d3b4c;
+    border-radius: 0.65vw 0.65vw 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Flexbox for the close button and the modal title*/
+.rating-modal-close-and-title {
+    display: flex;
+    align-items: center;
+}
+
+/*The modal title*/
+.rating-modal-close-and-title p {
+    margin: 0;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.08vw;
+    line-height: 2.08vw;
+    margin-left: 1.3vw;
+    color: #fff;
+}
+
+/* The close-modal Button */
+.close-rating-modal {
+    color: #FF6B58;
+    font-size: 1.8vw;
+    font-weight: bold;
+    width: 2.21vw;
+    height: 2.21vw;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    color: rgba(255, 107, 88, 0.7);
+}
+
+/*Close button*/
+.close-rating-modal:before {
+    content:  '\f00d';
+    font-family: fontAwesome;
+}
+
+/*Hover effect for the close button*/
+.close-rating-modal:hover{
+    background-color: rgba(255, 107, 88, 0.2);
+}
+
+
+/*Modal box teacher rating part*/
+.teacher-rating-section{
+    text-align: center;
+}
+/*Profile pic*/
+
+/*Modal box teacher profile picture*/
+#teacher-modal-profile-pic {
+
+    width: 8.14vw;
+    height: 8.14vw;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 2vw;
+
+}
+
+/*Words of the teacher rating part*/
+.teacher-rating-words h2{
+    font-family: Nunito;
+    font-size: 1.69vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 24.74vw;
+    word-wrap: break-word;
+}
+
+.teacher-rating-words p{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 0.91vw;
+    color:#AFB0B0;
+}
+
+/*Star icon*/
+.rating-star-icon{
+    display: flex;
+    transform: translate(-50%,-50%) rotateY(180deg);
+    margin: 1.95vw auto 0 13.02vw;
+
+}
+
+.rating-star-icon input{
+    display: none;
+}
+
+.rating-star-icon label{
+    display:block;
+    cursor:pointer;
+    width: 2.6vw;
+}
+
+/*before click the rating star*/
+.rating-star-icon :before{
+    content:  '\f006';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 2.6vw;
+    color: rgba(255, 107, 88, 0.7);
+}
+
+/*After click the rating star*/
+.rating-star-icon :after{
+    content:  '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 2.6vw;
+    color: #FF6B58;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+/*Hover affect for after pointed for rating star*/
+.rating-star-icon label:hover:after,
+.rating-star-icon input:hover ~ label:after,
+.rating-star-icon input:checked ~ label:after{
+    opacity: 1;
+
+}
+
+/*Sperate line */
+.rating-modal-seperateline{
+    width: 80%;
+    border: 0.065vw solid #CECECE;
+}
+
+/*Course Rating Part*/
+.course-rating-section{
+
+    margin: 6.51vw auto auto 10%;
+}
+
+/*Course Rating Title*/
+.course-rating-title{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.95vw;
+
+
+}
+
+/*Course Name*/
+.course-rating-name {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.17vw;
+    width: 15.89vw;
+    height: 3.26vw;
+    line-height: 1.63vw;
+    margin: 0.91vw 1.17vw 0.326vw 1.17vw;
+    text-align: left;
+    color: #2d3b4c
+}
+
+/*Course Category*/
+.course-rating-tag{
+    position: absolute;
+    background-color: #2d3b4c;
+    border-radius: 1.3vw;
+    padding: 0.195vw 0.85vw 0.26vw 0.85vw;
+    margin-top: -4.23vw;
+    margin-left: 67%;
+    margin: -4.23vw auto auto 67%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.91vw;
+    line-height: 1.24vw;
+    color: #fff;
+    text-align: left;
+    width:fit-content;
+}
+
+/*Course Published Date*/
+.course-rating-pubs-date {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.17vw;
+    width: 15.89vw;
+    height: 3.26vw;
+    line-height: 1.63vw;
+    margin: 1.5vw 1.17vw 0.326vw 1.17vw;
+    text-align: left;
+    color: rgba(45, 59, 76, 0.5);
+}
+
+/*Course Rating Star Icon*/
+#course-rating-star{
+    position: absolute;
+    margin-top: -3.9vw;
+    margin-left: 68%;
+}
+
+/*Comment box*/
+.rating-comment-box {
+    margin:1.43vw auto 3.25vw 10%;
+
+}
+/*Comment box title*/
+.rating-comment-box-title  {
+    margin: 0;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.17vw;
+    line-height: 1.43vw;
+    color: #2d3b4c;
+}
+/*comment box textarea*/
+.rating-comment-box textarea {
+    width: 90%;
+    padding: 0.65vw 1.04vw;
+    border: 0.065vw solid #2d3b4c;
+    box-sizing: border-box;
+    border-radius: 0.33vw;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.17vw;
+    font-style: normal;
+    font-weight: 400;
+    color: #2d3b4c;
+    margin-top: 0.52vw;
+    resize: none;
+}
+
+/*Submit Rating button*/
+.submit-rating{
+    margin-left:  66%;
+    margin-bottom: 3.26vw;
+}
+
+.submit-rating button{
+    width: 13.02vw;
+    height: 2.6vw;
+    background: #FF6B58;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.56vw;
+    line-height: 2.15vw;
+    text-align: center;
+    border:none;
+    color: #FFFFFF;
+}

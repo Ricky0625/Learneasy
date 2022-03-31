@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {margin: 0; padding: 0;}
+
+.cc-create-course {
+    margin: 0 auto 0 125px;
+    width: fit-content;
+}
+
+.cc-main-title {
+    margin: 0;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FF6B58;
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+.cc-label {
+    margin: 0;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: 2D3B4C;
+    margin-bottom: 12px;
+}
+
+#cc-in-cour-name {
+    width: 640px;
+    height: 45px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: 2D3B4C;
+    padding: 8px 18px;
+    outline: none;
+    background-color: #EAEBED;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#cc-op-cour-category {
+    width: 160px;
+    height: 45px;
+    padding: 8px 18px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: 2D3B4C;
+    outline: none;
+    background-color: #EAEBED;
+    border: none;
+    border-radius: 5px;
+}
+
+#cc-ta-about {
+    width: 850px;
+    height: 303px;
+    padding: 8px 18px;
+    box-sizing: border-box;
+    background-color: #EAEBED;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: 2D3B4C;
+    resize: none;
+    overflow: auto;
+}
+
+.cc-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cc-div {
+    margin-bottom: 16px;
+}
+
+.cc-cancel {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 8px 28px;
+    background-color: #F2617B;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.cc-cancel:hover {
+    background-color: #F04564;
+}
+
+.cc-create {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 8px 28px;
+    background-color: #5CD677;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.cc-create:hover {
+    background-color: #3FCF5F;
+}
+
+.cc-content-detail {
+    display: flex;
+    padding: 0 16px;
+    align-items: center;
+}
+
+.cc-hr {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.cc-content-lbl {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2D3B4C;
+}
+
+.cc-sequence {
+    margin: 0;
+    width: 70px;
+}
+
+.cc-cont-name {
+    margin: 0;
+    width: 420px;
+}
+
+.cc-cont-file {
+    margin: 0;
+    width: 334px;
+}
+
+.cc-cont-list-all {
+    margin: 0 auto 0 125px;
+    width: 1100px;
+}
+
+.cc-edit {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 8px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #FA8474;
+    transition: 0.3s;
+    cursor: pointer;
+    color: white;
+}
+
+.cc-edit:hover {
+    background-color: #FF6B58;
+}
+
+.cc-sub-title {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FF6B58;
+    margin-top: 42px;
+}
+
+#custom-cover-btn {
+    width: 118px;
+    height: 35px;
+    background-color: #FA8474;
+    border-radius: 5px;
+    padding: 6px 16px 7px 16px;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+#custom-cover-btn:hover {
+    background-color: #FF6B58;
+}
+
+#custom-cover-span {
+    color: rgba(45, 59, 76, 0.8);
+    width: 200px;
+    height: 22px;
+    font-family: Nunito;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    overflow: auto;
+    margin-left: 12px;
+}
+
+.cc-button {
+    margin-top: 60px;
+}
+
+.tab-empty-state {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.tab-empty-state img {
+  margin-top: 20px;
+  width: 200px;
+}
+
+.tab-empty-state p {
+  text-align: center;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3B4C;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 600; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: #2d3b4c; /* Fallback color */
+    background-color: #2d3b4c6a; /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    width: 1000px;
+    height: 80%;
+    max-height: 500px;
+    overflow: auto;
+    border-radius: 15px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #FF6B587a;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 6px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #FF6B58;
+  }
+
+  #ed-cont-title {
+    width: 640px;
+    height: 45px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: 2D3B4C;
+    padding: 8px 18px;
+    outline: none;
+    background-color: #EAEBED;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  #ed-cont-sequence {
+    width: 150px;
+    height: 45px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: 2D3B4C;
+    padding: 8px 18px;
+    outline: none;
+    background-color: #EAEBED;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .ed-flex{
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .ed-modal-top {
+      background-color: #2D3B4C;
+      border-radius: 15px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .edit-save-changes {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 8px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #FA8474;
+    transition: 0.3s;
+    cursor: pointer;
+    color: white;
+  }
+
+  .edit-save-changes:hover {
+      background-color: #FF6B58;
+  }
+
+  .ed-form {
+      padding: 30px;
+      overflow: scroll;
+  }
+
+  .ed-modal-title {
+      margin: 0;
+      margin-left: 8px;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 33px;
+      padding: 8px 30px;
+      color: #fff;
+  }
+
+  #ed-content-iframe{
+      width: 700px;
+      height: 350px;
+  }
+
+  .ed-navigate {
+    width: fit-content;
+    margin: 40px 0 30px auto;
+    }
+
+    .ed-navigate button {
+        background-color:#FA8474;
+        outline: none;
+        border: none;
+        color: #fff;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 5px;
+        padding: 8px 16px;
+        cursor: pointer;
+    }
+
+    .ed-navigate button:hover {
+        background-color: #FF6B58;
+    }

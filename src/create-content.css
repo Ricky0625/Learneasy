@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.create-course-titlebar {
+    width: 100%;
+    height: 4.17vw;
+    background-color: rgba(45, 59, 76, 1);
+}
+
+.titlebar-content {
+    width: 84.32vw;
+    height: 2.34vw;
+    margin-left: 7.81vw;
+    margin-top: 0.91vw;
+    margin-bottom: 0.91vw;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*Create Course Css*/
+.titlebar-content p {
+    margin: 0;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.56vw;
+    color: white;
+    height: 1.95vw;
+    margin-top: 0.2vw;
+    margin-bottom: 0.2vw;
+}
+
+/*container for content (video file/video title)*/
+.content-container {
+    width: 84.32vw;
+    height: auto;
+    margin-left: 7.81vw;
+    margin-right: 7.81vw;
+    margin-top: 3.19vw;
+    margin-bottom: 9vw;
+}
+
+.content-container p {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.34vw;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 2.15vw;
+}
+
+/*Content Input Field and Attach video file column */
+.content-details {
+    width: 53.45vw;
+    height: auto;
+}
+
+.info-box {
+    width: 48.9vw;
+    height: 19vw;
+    margin-bottom: 3vw;
+    border-bottom: 0.06vw solid black;
+}
+
+.video-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*Video Title css*/
+.video-title h3 {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.17vw;
+    color: black;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.video-title input[type=text] {
+    width: 40vw;
+    height: 2.6vw;
+    border: none;
+    outline: none;
+    background-color: rgba(234, 235, 237, 1);
+    border-radius: 0.33vw;
+    margin-top: 0.39vw;
+    display: flex;
+    font-family: nunito;
+    font-weight: 700;
+    font-size: 1.17vw;
+    color: rgba(0, 0, 0, 1);
+    padding-left: 1vw;
+}
+
+/*Video File css*/
+.video-file h3 {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.17vw;
+    color: black;
+    margin-bottom: 0;
+    margin-top: 1.04vw;
+}
+
+.video_sequence h3 {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.17vw;
+    color: black;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.video_sequence input[type=number] {
+    width: 6vw;
+    height: 2.6vw;
+    border: none;
+    outline: none;
+    background-color: rgba(234, 235, 237, 1);
+    border-radius: 0.33vw;
+    margin-top: 0.39vw;
+    display: flex;
+    font-family: nunito;
+    font-weight: 700;
+    font-size: 1.17vw;
+    color: rgba(0, 0, 0, 1);
+    padding-left: 1vw;
+}
+
+/*file uploader*/
+.choose {
+    outline: none;
+    border: none;
+    width: auto;
+}
+
+/*after click on "add" button (file uploader css)*/
+.choose::-webkit-file-upload-button {
+    padding: 0.42vw 1.17vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.33vw;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.17vw;
+    color: white;
+    background-color: rgba(255, 107, 88, 1);
+    text-align: center;
+}
+
+input[type="file"]{
+    color: transparent;
+}
+
+.choose::-webkit-file-upload-button:hover {
+    background-color: rgba(45, 59, 76, 1);
+}
+
+/*remove and add column box css*/
+.button {
+    margin-top: 6vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.add-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #50C878;
+    border-radius: 0.33vw;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.17vw;
+    color: white;
+    height: 2.6vw;
+    width: 9.77vw;
+    margin-right: 0.5vw;
+}
+
+.add-btn:hover, .remove-btn:hover, .submit-btn:hover {
+    background-color: white;
+    color: rgba(45, 59, 76, 1);
+}
+
+.submit-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #50C878;
+    border-radius: 0.33vw;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.17vw;
+    color: white;
+    height: 2.6vw;
+    width: 9.77vw;
+}
+
+.remove-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #F9423A;
+    border-radius: 0.33vw;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.17vw;
+    color: white;
+    padding: 0.52vw 2.5vw;
+    float: right;
+    margin-top: 6vw;
+    text-decoration: none;
+    display: flex;
+}

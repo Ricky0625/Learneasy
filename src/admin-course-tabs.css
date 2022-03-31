@@ -1,0 +1,952 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.course-tabs {
+  margin: 0vw 14.3229vw;
+  margin-top: 1.95vw;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  border: none;
+  float: left;
+  outline: none;
+  cursor: pointer;
+  padding: 0.91vw 1.04vw;
+  transition: 0.3s;
+  font-size: 1.1vw;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.17vw;
+  line-height: 1.62vw;
+  margin-right: 2.6vw;
+  background-color: transparent;
+  color: #2D3B4C;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgba(45, 59, 76, 0.1);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border-bottom: 0.32vw solid #ff6b58;
+  color: #2D3B4C;
+}
+
+/* Style the tab content */
+.tabcontent {
+  font-family: 'Nunito', sans-serif;
+  display: none;
+  padding: 2.9vw 3.9vw;
+}
+
+/*The title of each section. For examples, "About the class", "Reminder"*/
+.tab-titles {
+  margin: 0;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.56vw;
+  line-height: 2.14vw;
+  color: #2D3B4C;
+}
+
+/*The paragraphs in the tabs*/
+.tab-paragraph {
+  margin: 0;
+  padding: 0.65vw 0vw;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.17vw;
+  line-height: 1.62vw;
+  color: #2D3B4C;
+  text-align: justify;
+}
+
+.flexbox-for-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-course {
+  width: 70%;
+  margin: 0;
+}
+
+.about-teacher {
+  width: 25%;
+  margin: 0;
+}
+
+/*Div for teacher profile pic and name*/
+.profile-and-name {
+  display: flex;
+  align-items: center;
+}
+
+/*Teacher's profile picture*/
+.about-teacher img {
+  width: 2.73vw;
+  height: 2.73vw;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/*Teacher's Name*/
+#teacher-name {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.3vw;
+  line-height: 1.62vw;
+  color: #2D3B4C;
+  margin-left: 0.9vw;
+  cursor: pointer;
+}
+
+/*Teacher's bio*/
+#teacher-bio {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.17vw;
+  line-height: 1.62vw;
+  text-align: justify;
+  color: #2d3b4ca7;
+}
+
+#ratings {
+  margin: auto;
+}
+
+.en-course-rating {
+  width: 52.7vw;
+  margin: 0 auto;
+}
+
+.en-sec-title-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#give-rating-btn {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.17vw;
+  line-height: 1.63vw;
+  outline: none;
+  border: none;
+  background-color:#FA8474;
+  color: #fff;
+  padding: 0.33vw 1.042vw;
+  cursor: pointer;
+  border-radius: 0.33vw;
+  transition: 0.2s ease-in-out;
+}
+
+#give-rating-btn:hover {
+  background-color: #FF6B58;
+}
+
+.en-section-title {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.432vw;
+  line-height: 1.953vw;
+  color: #2D3B4C;
+}
+
+.rating-and-chart {
+  margin-top: 1.3vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.en-rating-value {
+  width: 18.88vw;
+  height: 13.54vw;
+  border: 0.26vw solid #2D3B4C;
+  box-sizing: border-box;
+  border-radius: 1.3vw;
+}
+
+.center-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.93vw;
+}
+
+.center-div p {
+  margin: 0;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.34vw;
+  line-height: 3.19vw;
+  color: #2D3B4C;
+}
+
+.en-star-value {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  color: #FF6B58;
+}
+
+.en-star-value i {
+  font-size: 2.083vw;
+  margin-bottom: 0.33vw;
+}
+
+.en-star-value span {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.995vw;
+  line-height: 1.05vw;
+}
+
+.num-of-review {
+  margin-top: 0.65vw;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.91vw;
+  line-height: 1.04vw;
+  color: rgba(45, 59, 76, 0.5);
+}
+
+.rating-chart {
+  width: 31.9vw;
+  height: 13.54vw;
+  border: 0.26vw solid #2D3B4C;
+  box-sizing: border-box;
+  border-radius: 1.3vw;
+  padding: 1.17vw 2.21vw 1.953vw 2.21vw;
+}
+
+.chart-title {
+  margin: 0;
+  margin-bottom: 0.65vw;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.17vw;
+  line-height: 1.63vw;
+  color: #2D3B4C;
+}
+
+.chart-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rating-num{
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.17vw;
+  line-height: 1.63vw;
+  color: #2D3B4C;
+  margin-right: 1.693vw;
+}
+
+.chart-bar {
+  position: relative;
+}
+
+.orange-bar {
+  position: absolute;
+  height: 0.91vw;
+  background-color: #FF6B58;
+}
+
+.bar-5 {
+  width: 13.35vw;
+}
+
+.bar-4 {
+  width: 7.68vw;
+}
+
+.bar-3 {
+  width: 4.3vw;
+}
+
+.bar-2 {
+  width: 1.5625vw;
+}
+.bar-1 {
+  width: 0.98vw;
+}
+
+.grey-bar {
+  width: 22.786vw;
+  height: 0.91vw;
+  background-color: #C4C4C4;
+}
+
+.rating-count {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.17vw;
+  line-height: 1.63vw;
+  color: #2d3b4cc9;
+  margin-left: 0.78vw;
+}
+
+.student-ratings {
+  width: 52.7vw;
+  margin: 0 auto;
+  margin-top: 1.62vw;
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  flex-wrap: wrap;
+}
+
+.rating-border {
+  padding: 1.3vw 1.95vw;
+  width: 25.71vw;
+  height:13.67vw;
+  background-color: #fff;
+  border: 0.13vw solid rgba(45, 59, 76, 0.8);
+  box-sizing: border-box;
+  border-radius: 0.65vw;
+  margin-bottom: 1.3vw;
+}
+
+.pic-name-date-rate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.who-profile-pic {
+  width: 3.25vw;
+  height: 3.25vw;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.username-and-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 17.45vw;
+}
+
+.username-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.who-post {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.17vw;
+  line-height: 1.62vw;
+  color: #2D3B4C;
+}
+
+.post-date {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.91vw;
+  line-height: 1.04vw;
+  color: rgba(45, 59, 76, 0.5);
+}
+
+.student-rating-star {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+}
+
+.student-rating-star span {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.56vw;
+  line-height: 2.15vw;
+  color: #263238;
+}
+
+.student-rating-star i {
+  color: #FF6B58;
+  font-size: 1.17vw;
+  margin-bottom: 0.2vw;
+}
+
+.rating-comment {
+  margin: 0;
+  margin-top: 0.65vw;
+  height: 6.84vw;
+  width: 100%;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.qna-tab {
+  margin: 0 auto;
+  width: 55.99vw;
+}
+
+.qna-title-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 55.99vw;
+  height: fit-content;
+  margin-bottom: 0.78vw;
+  align-items: center;
+}
+
+.question-form{
+  width: 55.99vw;
+}
+
+.qna-title {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.56vw;
+  line-height: 2.15vw;
+  color: #2D3B4C;
+  margin: 0;
+}
+
+#ask-question {
+  width: 55.99vw;
+  height: 8.14vw;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.17vw;
+  line-height: 1.62vw;
+  color: #2D3B4C;
+  padding: 1.04vw 1.69vw;
+  border: 0.065vw solid #2D3B4C;
+  box-sizing: border-box;
+  border-radius: 0.65vw;
+  outline: none;
+  transition: 0.2s ease-in;
+  resize: none;
+  overflow: auto;
+}
+
+#ask-question:focus {
+  border: 0.065vw solid #FF6B58;
+}
+
+#ask-question::placeholder {
+  font-style: italic;
+}
+
+#post-question {
+  padding: 0.39vw 0.91vw;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.17vw;
+  line-height: 1.63vw;
+  outline: none;
+  border: none;
+  background-color: #FA8474;
+  color: #fff;
+  border-radius: 0.325vw;
+  cursor: pointer;
+  display: none;
+  transition: 0.2s ease-in-out;
+}
+
+#post-question:hover {
+  background-color: #FF6B58;
+}
+
+.question-count {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.17vw;
+  line-height: 1.63vw;
+  color: #FF6B58;
+  margin-top: 1.82vw;
+  margin-bottom: 1.17vw;
+}
+
+.question-list {
+  width: 55.99vw;
+}
+
+.question-template {
+  padding: 0.65vw 1.95vw;
+  width: 52.08vw;
+}
+
+.question-template p{
+  width: 100%;
+  height: fit-content;
+}
+
+.post-info {
+  display: flex;
+  justify-content: space-between;
+  width: 52.08vw;
+}
+
+.question-template img {
+  width: 2.08vw;
+  height: 2.08vw;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post-owner {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.91vw;
+  line-height: 1.24vw;
+}
+
+.post-date {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.91vw;
+  line-height: 1.24vw;
+}
+
+.post-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.owner-date {
+  margin-left: 0.65vw;
+  width: 14.97vw;
+  justify-content: space-between;
+}
+
+.comment-link i, .comment-link span{
+  color: #FA8474;
+}
+
+.comment-link:hover i,.comment-link:hover span{
+  color: #FF6B58;
+}
+
+.comment-link a {
+  text-decoration: none;
+}
+
+.comment-link i {
+  font-size: 1.3vw;
+  margin-right: 0.33vw;
+  transition: 0.2s ease-in-out;
+}
+
+.comment-link span {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.3vw;
+  line-height: 1.76vw;
+  transition: 0.2s ease-in-out;
+}
+
+.question-list-hr {
+  margin: 0.32vw 0;
+  border: rgba(45, 59, 76, 0.4) 0.065vw solid;
+}
+
+.resource-quiz-section {
+  width: 55.99vw;
+  margin: 0 auto;
+}
+
+.resource-list {
+  margin-bottom: 2.6vw;
+}
+
+.res-quiz-title {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.56vw;
+  line-height: 2.148vw;
+  color: #2D3B4C;
+  margin: 0;
+}
+
+.res-quiz-sub {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.04vw;
+  line-height: 1.23vw;
+  color: rgba(45, 59, 76, 0.6);
+  margin: 0;
+  margin-bottom: 0.98vw;
+}
+
+.resource-hr {
+  margin: 0.65vw 0;
+  height: 0.13vw;
+  background-color: rgba(45, 59, 76, 0.4);
+  border: none;
+}
+
+.resource-file {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.65vw 1.95vw;
+  color: #ff6b58;
+}
+
+.resource-file i {
+  margin-right: 0.78vw;
+  font-size: 1.43vw;
+}
+
+.resource-file a {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.17vw;
+  line-height: 1.63vw;
+  text-decoration: none;
+  color: #FF6B58;
+  transition: 0.2s ease-in-out;
+}
+
+.resource-file a:hover {
+  text-decoration: underline;
+}
+
+.quiz-card-list {
+  width: 55.99vw;
+  margin-top: 0.976vw;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.quiz-card {
+  width: 13.02vw;
+  height: 13.02vw;
+  background-color: #fff;
+  box-shadow: 0vw 0.26vw 0.65vw rgba(45, 59, 76, 0.35);
+  border-radius: 0.33vw;
+  transition: 0.2s ease-in-out;
+  margin: 0.65vw 0.46vw;
+}
+
+.quiz-card:hover {
+  transform: scale(1.05);
+}
+
+.link-to-course {
+  text-decoration: none;
+}
+
+.quiz-pic-qs {
+  width: 100%;
+  height: 6.51vw;
+  border-radius: 0.33vw 0.33vw 0 0;
+  position: relative;
+}
+
+.quiz-pic-qs img {
+  width: 100%;
+  height: 6.51vw;
+  object-fit: cover;
+  border-radius: 0.33vw 0.33vw 0 0;
+  position: absolute;
+}
+
+.quiz-ques-num {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.78vw;
+  line-height: 1.04vw;
+  color: #fff;
+  background-color: rgba(45,59,76,0.8);
+  padding: 0.13vw 0.65vw;
+  width: fit-content;
+  height: 3.19vw;
+  border-radius: 0.65vw;
+  position: relative;
+  top: 4.56vw;
+  left: 9.114vw;
+}
+
+.quiz-name-owner {
+  width: 11.71vw;
+  height: 5.47vw;
+  border-radius: 0 0 0.33vw 0.33vw;
+  padding: 0.39vw 0.65vw 0.65vw 0.65vw;
+}
+
+.quiz-name {
+  width: 100%;
+  height: 3.9vw;
+  overflow: hidden;
+  margin: 0;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.04vw;
+  line-height: 1.43vw;
+  color: #2D3B4C;
+}
+
+.quiz-owner-author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.quiz-owner {
+  width: 1.3vw;
+  height: 1.3vw;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 0.33vw;
+}
+
+.quiz-author {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.78vw;
+  line-height: 1.04vw;
+  color: #2D3B4C;
+}
+
+.tab-empty-state {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.tab-empty-state img {
+  margin-top: 1.3vw;
+  width: 13.02vw;
+}
+
+.tab-empty-state p {
+  text-align: center;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.04vw;
+  line-height: 1.43vw;
+  color: #2D3B4C;
+}
+
+.progress-title-viewall{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-title-viewall p {
+font-family: Nunito;
+font-style: normal;
+font-weight: 800;
+font-size: 1.56vw;
+line-height: 2.15vw;
+color: #2D3B4C;
+}
+
+.progress-title-viewall button {
+font-family: Nunito;
+font-style: normal;
+font-weight: 800;
+font-size: 1.17vw;
+line-height: 1.63vw;
+color: #FFFFFF;
+outline: none;
+background-color:#FA8474;
+border: none;
+border-radius: 0.36vw;
+padding: 0.52vw 1.56vw;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.progress-title-viewall button:hover {
+  background-color: #FF6B58;
+}
+
+.prog-stud-info{
+  display: flex;
+  align-items: center;
+  padding: 0 2.28vw;
+}
+
+.prog-stud-info img {
+  width: 4.56vw;
+  height: 4.56vw;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 0.065vw solid #C4C4C4;
+}
+
+.prog-name {
+  margin-left: 0.98vw;
+}
+
+.prog-name p{
+  margin: 0;
+  width: 13.02vw;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.prog-stud-fullname{
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.17vw;
+  line-height: 1.627vw;
+  color: #2D3B4C;
+}
+
+.prog-stud-username{
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.17vw;
+  line-height: 1.627vw;
+  color: rgba(45, 59, 76, 0.6);
+}
+
+.prog-stud-date {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.17vw;
+  line-height: 1.627vw;
+  color: rgba(45, 59, 76, 0.6);
+}
+
+.progress-bars {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 0 0 auto;
+}
+
+.prog-stud-bar {
+  position: relative;
+}
+
+.prog-stud-grey-bar{
+  width: 18.88vw;
+  height: 1.95vw;
+  background-color: #C4C4C4;
+  border-radius: 0.325vw;
+  text-align: center;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.171vw;
+  line-height: 1.63vw;
+  color: #FFFFFF;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 0.195vw;
+}
+
+/*
+.prog-stud-orange-bar{
+  position: absolute;
+  height: 30px;
+  width: 200px;
+  background-color: #FF6B58;
+  border-radius: 5px;
+  text-align: center;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 3px;
+}
+*/
+
+.progress-seperator {
+  margin: 0.976vw 0;
+  border-top: 0.065vw solid rgba(45, 59, 76, 0.4);
+  border-bottom: 0.065vw solid rgba(45, 59, 76, 0.4);
+  color: rgba(45, 59, 76, 0.4);
+  border-radius: 0.977vw;
+  background-color:rgba(45, 59, 76, 0.4);
+}
+
+.stats-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stats-box {
+  width: 18.88vw;
+  height: 13.67vw;
+  padding: 1.5vw 2.343vw;
+  border: #2D3B4C 0.26vw solid;
+  box-sizing: border-box;
+  border-radius: 1.3vw;
+}
+
+.stats-label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.56vw;
+  line-height: 1.82vw;
+  color: #2D3B4C;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 0.78vw;
+}
+
+.stats-value {
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4.17vw;
+  line-height: 4.88vw;
+  color: #FF6B58;
+  margin: 0;
+  margin-top: 1.43vw;
+}
+
+.progress-list-section {
+  padding: 0 16.28vw;
+  margin-bottom: 13.02vw;
+}

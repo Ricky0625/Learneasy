@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.backbtn button {
+    width: 7vw;
+    height: 2.5vw;
+    background-color: #FF6B58;
+    border-radius: 0.33vw;
+    border: none;
+    outline: none;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.17vw;
+    color: white;
+    cursor: pointer;
+    margin-left: 7.81vw;
+}
+
+.backbtn button:hover {
+    background-color: white;
+    color: rgba(45, 59, 76, 1);
+}
+
+.backbtn button i {
+    margin-right: 0.5vw;
+}
+
+.create-course-titlebar {
+    width: 100%;
+    height: 4.17vw;
+    background-color: rgba(45, 59, 76, 1);
+}
+
+.titlebar-content {
+    width: 84.32vw;
+    height: 2.34vw;
+    margin-left: 7.81vw;
+    margin-top: 0.91vw;
+    margin-bottom: 0.91vw;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*Create Course Css*/
+.titlebar-content p {
+    margin: 0;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.56vw;
+    color: white;
+    height: 1.95vw;
+    margin-top: 0.2vw;
+    margin-bottom: 0.2vw;
+}
+
+/*Quiz form Css*/
+.create-quiz-container {
+    width: 75.13vw;
+    height: auto;
+    margin-left: 7.81vw;
+    margin-right: 7.81vw;
+    margin-top: 3.19vw;
+    margin-bottom: 9vw;
+}
+
+/*Quiz Form words css*/
+.create-quiz-container p {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.34vw;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 2.15vw;
+}
+ 
+/*Quiz Title and Quiz Time box*/
+.quiz-content {
+    width: 62.04vw;
+    height: 12.37vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/*Quiz title box*/
+.quiz-title {
+    width: 44.66vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin-bottom: 0.59vw;
+}
+
+/*Quiz Title CSS*/
+.title p {
+    float: left;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.17vw;
+    color: rgba(45, 59, 76, 1);
+    margin-bottom: 0;
+}
+
+/* (0/50) CSS Quiz Title word limit css*/
+.title span {
+    float: right;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.17vw;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.quiz-title input[type=text] {
+    width: 43.66vw;
+    height: 2.73vw;
+    background-color: rgba(234, 235, 237, 1);
+    border-radius: 0.33vw;
+    outline: none;
+    border: none;
+    font-family: nunito;
+    font-weight: 700;
+    font-size: 1.17vw;
+    color: rgba(45, 59, 76, 1);
+    padding-left: 1vw;
+}
+
+/*Course infor box*/
+.display-course-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.04vw;
+    height: 6.05vw;
+    justify-content: space-between;
+}
+
+/*label css*/
+.display-course-info label {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.17vw;
+    color: rgba(45, 59, 76, 1);
+}
+
+/*Quiz time box*/
+.quiz-time {
+    width: 13.22vw;
+    height: 12.37vw;   
+    display: flex;
+    flex-direction: column;
+}
+
+/*label quiz time word css*/
+.quiz-time label {
+    float: left;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.17vw;
+    color: rgba(45, 59, 76, 1);
+    width: 100%;
+    margin-bottom: 0.59vw;
+}
+
+/*Input box css (include input column and mins h2*/
+.input-box {
+    width: 100%;
+    height: 2.73vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input-box input[type=text] {
+    background-color: rgba(234, 235, 237, 1);
+    border-radius: 0.33vw;
+    outline: none;
+    border: none;
+    font-family: nunito;
+    font-weight: 700;
+    font-size: 1.17vw;
+    color: rgba(45, 59, 76, 1);
+    width: 8.24vw;
+    height: 2.73vw;
+    padding-left: 1vw;
+}
+
+.input-box h2 {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.17vw;
+    color: rgba(0, 0, 0, 1); 
+    margin: auto;
+}
+
+.submit-btn:hover {
+    background-color: white;
+    color: rgba(45, 59, 76, 1);
+}
+
+.submit-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #50C878;
+    border-radius: 0.33vw;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.17vw;
+    color: white;
+    height: 2.6vw;
+    width: 9.77vw;
+    margin-top: 3vw;
+}

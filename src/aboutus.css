@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.about-us-hero {
+    position: relative;
+}
+
+.about-us-hero img {
+    width: 100%;
+    height: 32.55vw;
+    object-fit: cover;
+    opacity: 85%;
+}
+
+.hero-title-tag {
+    position: absolute;
+    top: 10.09vw;
+    left: 7.81vw;
+}
+
+.about-us-hero-title {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.6vw;
+    line-height: 2.93vw;
+    width: 32.23vw;
+    height: 6.18vw;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 0.98vw;
+}
+
+.hero-tag {
+    width: 8.79vw;
+    height: 2.41vw;
+    padding: 0.52vw 0.98vw;
+    background-color: rgba(255, 107, 88, 0.75);
+    border-radius: 0.33vw;
+    text-decoration: none;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.17vw;
+    line-height: 1.63vw;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+    margin-right: 0.65vw;
+}
+
+.hero-tag:hover {
+    background-color: #FF6B58;
+}
+
+.our-mission {
+    margin: 3.26vw;
+}
+
+.mission-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 17.25vw;
+    padding-top: 1.63vw;
+}
+
+.missions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-title {
+    margin: 0;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.21vw;
+    line-height: 3vw;
+    color: #2D3B4C;
+    text-align: center;
+}
+
+.mission-circle {
+    width: 8.46vw;
+    height: 8.46vw;
+    border-radius: 50%;
+    object-fit: cover;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(70%);
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.mission-circle:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(0%);
+    transform: scale(1.1, 1.1);
+  }
+
+.mission-subtitle {
+    margin: 0.78vw 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.17vw;
+    line-height: 1.37vw;
+    color: #2D3B4C;
+}
+
+.mission-paragraph {
+    width: 16.93vw;
+    height: fit-content;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.91vw;
+    line-height: 1.24vw;
+    text-align: center;
+    color: #808080;
+    margin: 0;
+}
+
+.our-story {
+    margin-top: 4.56vw;
+}
+
+.story-title-paragraph {
+    padding: 0 18.23vw;
+}
+
+.story-paragraph {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.17vw;
+    line-height: 1.95vw;
+    text-align: center;
+    color: #2D3B4C;
+    width: 56.64vw;
+    margin: 1.04vw auto 4.43vw auto;
+}

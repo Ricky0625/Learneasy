@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.enroll-course-page {
+    padding: 0 11.068vw;
+    margin-bottom: 9.766vw;
+}
+
+.enroll-course {
+    display: flex;
+    justify-content: space-between;
+}
+
+.en-course-left {
+    width: 52.73vw;
+}
+
+.en-course-info {
+    margin-bottom: 1.3vw;
+}
+
+.en-course-name{
+    margin: 0;
+    max-width: 52.73vw;
+    margin-bottom: 1.3vw;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.5625vw;
+    line-height: 2.15vw;
+    color: #2D3B4C;
+}
+
+.en-course-cover {
+    width: 52.73vw;
+    height: 19.53vw;
+    object-fit: cover;
+}
+
+.about-teacher {
+    width: 52.73vw;
+    margin-bottom: 3vw;
+}
+
+.about-class {
+    margin-bottom: 3vw;
+}
+
+.en-section-title {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.432vw;
+    line-height: 1.953vw;
+    color: #2D3B4C;
+}
+
+#enroll-btn {
+    padding: 0.52vw 1.04vw;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.17vw;
+    line-height: 1.63vw;
+    color: #FFFFFF;
+    background-color: #FA8474;
+    border-radius: 0.33vw;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+#enroll-btn:hover {
+    background-color: #FF6B58;
+}
+
+.en-flex-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pic-and-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.78vw;
+}
+
+.pic-and-name img {
+    width: 2.73vw;
+    height: 2.73vw;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 0.98vw;
+}
+
+.pic-and-name a {
+    text-decoration: none;
+}
+
+.pic-and-name span {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5625vw;
+    line-height: 1.63vw;
+    color: #2D3B4C;
+    transition: 0.2s;
+}
+
+.pic-and-name span:hover {
+    text-decoration: underline;
+}
+
+.en-teacher-bio {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.17vw;
+    line-height: 1.63vw;
+    color: rgba(45, 59, 76, 0.8);
+    text-align: justify;
+}
+
+.en-course-left hr {
+    height: 0.13vw;
+    background-color: rgba(45, 59, 76, 0.5);
+    border: none;
+    margin: 1.5625vw 0;
+}
+
+.en-course-des {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.17vw;
+    line-height: 1.63vw;
+    color: rgba(45, 59, 76, 0.8);
+    text-align: justify;
+}
+
+.en-course-rating {
+    width: 52.7vw;
+    margin: 0 auto;
+  }
+  
+  .en-sec-title-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #give-rating-btn {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.17vw;
+    line-height: 1.63vw;
+    outline: none;
+    border: none;
+    background-color:#FA8474;
+    color: #fff;
+    padding: 0.33vw 1.042vw;
+    cursor: pointer;
+    border-radius: 0.33vw;
+    transition: 0.2s ease-in-out;
+  }
+  
+  #give-rating-btn:hover {
+    background-color: #FF6B58;
+  }
+  
+  .en-section-title {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.432vw;
+    line-height: 1.953vw;
+    color: #2D3B4C;
+  }
+  
+  .rating-and-chart {
+    margin-top: 1.3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .en-rating-value {
+    width: 18.88vw;
+    height: 13.54vw;
+    border: 0.26vw solid #2D3B4C;
+    box-sizing: border-box;
+    border-radius: 1.3vw;
+  }
+  
+  .center-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.93vw;
+  }
+  
+  .center-div p {
+    margin: 0;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.34vw;
+    line-height: 3.19vw;
+    color: #2D3B4C;
+  }
+  
+  .en-star-value {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    color: #FF6B58;
+  }
+  
+  .en-star-value i {
+    font-size: 2.083vw;
+    margin-bottom: 0.33vw;
+  }
+  
+  .en-star-value span {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.995vw;
+    line-height: 1.05vw;
+  }
+  
+  .num-of-review {
+    margin-top: 0.65vw;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.91vw;
+    line-height: 1.04vw;
+    color: rgba(45, 59, 76, 0.5);
+  }
+  
+  .rating-chart {
+    width: 31.9vw;
+    height: 13.54vw;
+    border: 0.26vw solid #2D3B4C;
+    box-sizing: border-box;
+    border-radius: 1.3vw;
+    padding: 1.17vw 2.21vw 1.953vw 2.21vw;
+  }
+  
+  .chart-title {
+    margin: 0;
+    margin-bottom: 0.65vw;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.17vw;
+    line-height: 1.63vw;
+    color: #2D3B4C;
+  }
+  
+  .chart-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .rating-num{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.17vw;
+    line-height: 1.63vw;
+    color: #2D3B4C;
+    margin-right: 1.693vw;
+  }
+  
+  .chart-bar {
+    position: relative;
+  }
+  
+  .orange-bar {
+    position: absolute;
+    height: 0.91vw;
+    background-color: #FF6B58;
+  }
+  
+  .bar-5 {
+    width: 13.35vw;
+  }
+  
+  .bar-4 {
+    width: 7.68vw;
+  }
+  
+  .bar-3 {
+    width: 4.3vw;
+  }
+  
+  .bar-2 {
+    width: 1.5625vw;
+  }
+  .bar-1 {
+    width: 0.98vw;
+  }
+  
+  .grey-bar {
+    width: 22.786vw;
+    height: 0.91vw;
+    background-color: #C4C4C4;
+  }
+  
+  .rating-count {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.17vw;
+    line-height: 1.63vw;
+    color: #2d3b4cc9;
+    margin-left: 0.78vw;
+  }
+  
+  .student-ratings {
+    width: 54vw;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    flex-wrap: wrap;
+  }
+  
+  .rating-border {
+    padding: 20px 30px;
+    width: 395px;
+    height:210px;
+    background-color: #fff;
+    border: 2px solid rgba(45, 59, 76, 0.8);
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .pic-name-date-rate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .who-profile-pic {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .username-and-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 268px;
+  }
+  
+  .username-date {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .who-post {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2D3B4C;
+  }
+  
+  .post-date {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(45, 59, 76, 0.5);
+  }
+  
+  .student-rating-star {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+  }
+  
+  .student-rating-star span {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    color: #263238;
+  }
+  
+  .student-rating-star i {
+    color: #FF6B58;
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
+  
+  .rating-comment {
+    margin: 0;
+    margin-top: 10px;
+    height: 105px;
+    width: 100%;
+    text-align: justify;
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+  }
+
+.related-course {
+    width: 18.23vw;
+}
+
+.related-title {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5625vw;
+    line-height: 2.15vw;
+    color: rgba(45, 59, 76, 0.8);
+}
+
+.related-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 46.22vw;
+}
+
+.tab-empty-state {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.tab-empty-state img {
+  margin-top: 20px;
+  width: 200px;
+}
+
+.tab-empty-state p {
+  text-align: center;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3B4C;
+}

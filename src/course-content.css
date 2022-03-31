@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.course-content-div {
+    padding: 2.6vw 7.8125vw;
+    background-color: #2D3B4C;
+}
+
+.course-name-edit-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-name-edit-btn button{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #FA8474;
+    transition: 0.3s;
+    padding: 8px 32px;
+    cursor: pointer;
+}
+
+.course-name-edit-btn button:hover {
+    background-color: #FF6B58;
+}
+
+.content-course-name {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.3vw;
+    line-height: 1.758vw;
+    color: #fff;
+}
+
+.course-video-chapter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.course-video-chapter iframe{
+    width: 52vw;
+    height: 29.297vw;
+}
+
+.course-chapter {
+    width: 26.042vw;
+    height: 29.3vw;
+    background-color: #525D6B;
+    overflow: auto;
+}
+
+.progress-span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.count-complete {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.9vw;
+    line-height: 1.24vw;
+    color: #ce786d;
+    padding: 0.977vw 1.3vw;
+}
+
+.fixed-chapter {
+    background-color: #525D6B;
+    margin: 0;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.17vw;
+    line-height: 1.63vw;
+    color: #fff;
+    padding: 0.977vw 1.3vw;
+}
+
+.chapter-name-div {
+    background-color: #3F4C5B;
+    padding: 1.3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+.chapter-name-div:hover {
+    background-color: #888F98;
+}
+
+.chapter-name-div a {
+    text-decoration: none;
+}
+
+.chapter-name {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.17vw;
+    line-height: 1.63vw;
+    color: #fff;
+    width: 18.23vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.chapter-name-div i {
+    color: rgb(118, 114, 114);
+    cursor: pointer;
+    font-size: 1.17vw;
+}
+
+/* The container */
+.progress-container {
+    position: relative;
+    padding-left: 2.28vw;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: 0.3s;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .progress-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .progress-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.43vw;
+    width: 1.43vw;
+    border-radius: 50%;
+    background-color: #B4BFCC;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    transition: 0.3s;
+    padding-left: 0.29vw;
+    padding-top: 0.0976562vw;
+    box-sizing: border-box;
+  }
+  .progress-checkmark i {
+      color: #fff;
+      font-size: 0.78vw;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .progress-container:hover input ~ .progress-checkmark{
+    background-color: #FA8474;
+  }
+  
+  /* When the checkbox is checked, add a orange background */
+  .progress-container input:checked ~ .progress-checkmark {
+    background-color: #FF6B58;
+  }
+  
+  .progress-container input:checked ~ .progress-checkmark i{
+    display: block;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .progress-checkmark i{
+    position: absolute;
+    display: none;
+  }
+
+  .progress-tracker {
+      height: fit-content;
+      width: fit-content;
+  }

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*Link to course*/
+.course-link{
+    text-decoration: none;
+}
+
+/*Course Card*/
+.course-card {
+    background-color: #fff;
+    max-width: 18.23vw;
+    width: 18.23vw;
+    max-height: 21.48vw;
+    height: 21.48vw;
+    filter: drop-shadow(0px 5px 15px rgba(45, 59, 76, 0.25));
+    margin: 0px;
+    transition: 0.2s ease-out;
+  }
+
+/*Hover effect when hover the course card*/
+.course-card:hover{
+    transform: scale(1.02);
+}
+
+/*Course Cover Picture*/
+.course-cover-pic {
+    width: 18.23vw;
+    height: 12.3vw;
+    object-fit: cover;
+}
+
+/*Name of the course*/
+.course-name {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.17vw;
+    width: 15.89vw;
+    height: 3.26vw;
+    line-height: 1.63vw;
+    margin: 0.91vw 1.17vw 0.326vw 1.17vw;
+    text-align: left;
+    color: #2d3b4c
+}
+
+/*Flexbox for teacher name and rating star*/
+.teacher-star-flex{
+    width: 15.89vw;
+    margin: 0px 1.17vw 0.065vw 1.17vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+/*Teacher of the course*/
+.course-teacher {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.91vw;
+    line-height: 1.042vw;
+    width: 10.74vw;
+    height: 1.042vw;
+    color: rgba(0, 0, 0, 0.5);
+    /*margin: 0px 32px 10px 18px;*/
+    text-align: left;
+    margin: 0px;
+}
+
+/*Rating Star and Rating Value Flexbox*/
+.rating-and-value{
+    width: 3.06vw;
+    height: 1.63vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/*Rating Star*/
+.rating-star{
+    width: 1.042vw;
+    height: 0.98vw;
+    margin-top: 0.26vw;
+ }
+ 
+ /*Rating value*/
+ .rating-value{
+    margin: 0px;
+    width: 1.69vw;
+    height: 1.62vw;
+    font-family: 'Nunito',serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.17vw;
+    line-height: 1.63vw;
+    color: #ff6b58;
+ }
+
+/*Course tag*/
+.course-tag{
+    background-color: #2d3b4c;
+    border-radius: 1.3vw;
+    padding: 0.195vw 0.85vw 0.26vw 0.85vw;
+    margin: 0px 11.72vw 1.3vw 1.17vw;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.91vw;
+    line-height: 1.24vw;
+    color: #fff;
+    text-align: left;
+    width:fit-content;
+}

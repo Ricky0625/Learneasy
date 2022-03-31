@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 600; /* Sit on top */
+  padding-top: 120px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #2D3B4C; /* Fallback color */
+  background-color: rgba(45, 59, 76, 0.8); /* Black w/ opacity */
+  transition: 0.4s;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #ffffff;
+  margin: auto;
+  padding: 51px 38px 52px 38px;
+  width: 544px;
+  height: 181px;
+  box-shadow: 0px 4px 55px rgba(45, 59, 76, 0.23);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.confirm-left{
+    width: 340px;
+}
+
+.top-label{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #2D3B4C;
+    margin: 0;
+}
+
+.bottom-label {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2D3B4C;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.bottom-label a {
+    color: #FF6B58;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+#check {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    background-color: #d5d5d5;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+
+#check:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 14px;
+    color: white;
+    display: none;
+}
+
+#check:hover{
+    background-color: #fd9385;
+}
+
+#check:checked{
+    background-color: #FF6B58;
+}
+
+#check:checked:after{
+    display: block;
+}
+
+.check-label {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(45, 59, 76, 0.5);
+    cursor: pointer;
+}
+
+.cancel-ok {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.cancel-ok button {
+    width: 90px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 3px solid #ababab;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #ababab;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-right: 12px;
+    outline: none;
+}
+
+.cancel-ok button:hover {
+    border: 3px solid #FF6B58;
+    color: #FF6B58;
+}
+
+.confirm-enroll {
+    width: 90px;
+    height: 32px;
+    background-color: #FA8474;
+    border-radius: 5px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.confirm-enroll:hover {
+    background-color: #FF6B58;
+}
+
+.confirm-right img {
+    width: 196px;
+}
+
+.unenroll-course-name {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FF6B58;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
