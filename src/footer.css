@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Section for footer*/
+.learneasy-footer {
+    width: auto;
+    height: 11.72vw;
+    margin: 0px;
+    padding: 2.14vw 7.94vw;
+    background-color: #2d3b4c;
+    display: flex;
+}
+
+/*The a tags for the logo and social icons*/
+.logo-and-social a{
+    cursor: pointer;
+}
+
+/*The logo*/
+.logo-and-social img{
+    width: 7.36vw;
+}
+
+/*The description of the learneasy company*/
+.company-des {
+    max-width: 12.37vw;
+    max-height: 2.6vw;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.91vw;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.24vw;
+    width: fit-content;
+    height: fit-content;
+    color: #fff;
+    margin: 0.46vw 0px 2.213vw 0px;
+}
+
+/*Div box for social icons*/
+.social-icon {
+    display: flex;
+}
+
+/*The a tag for social icons*/
+.social-icon a{
+    cursor: pointer;
+}
+
+/*Odd number of social icons*/
+.social-odd {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    width: 2.6vw;
+    height: 2.6vw;
+    margin-right: 0.72vw;
+}
+
+/*Even number of social icons*/
+.social-even {
+    background-color: #ff6b58;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    width: 2.6vw;
+    height: 2.6vw;
+    margin-right: 0.72vw;
+}
+
+/*Facebook logo*/
+.facebook i{
+    margin: 0.78vw 0px 0px 0.977vw;
+    color: #ff6b58;
+    font-size: 1.04vw;
+}
+
+/*Insta logo*/
+.insta i{
+    margin: 0.78vw 0px 0px 0.85vw;
+    color: #fff;
+    font-size: 1.04vw;
+}
+
+/*Twitter logo*/
+.twitter i {
+    margin: 0.78vw 0px 0px 0.85vw;
+    color: #ff6b58;
+    font-size: 1.04vw;
+}
+
+/*Footer menu*/
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7.8vw;
+}
+
+/*A tags of the footer menu*/
+.footer-menu a{
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.91vw;
+    line-height: 1.24vw;
+    color: #fff;
+    margin-bottom: 0.39vw;
+}
+
+/*Hover effect of the footer menu*/
+.footer-menu a:hover{
+    color: #ff6b58;
+}
+
+/*Copyrights*/
+.team-members {
+    width: auto;
+    padding: 1.042vw 0;
+    background-color: #ff6b58;
+    font-family: 'Nunito',serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.91vw;
+    line-height: 1.24vw;
+    color: #fff;
+    text-align: center;
+}

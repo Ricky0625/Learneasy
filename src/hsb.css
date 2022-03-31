@@ -1,0 +1,47 @@
+.profile-pic {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.profile-pic img {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-pic:hover .overlay-front {
+    display: block;
+}
+
+.overlay-front {
+    position: absolute;
+    background-color: #2d3b4c7d;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+}
+
+.overlay-front i {
+    font-size: 30px;
+    opacity: 1;
+    color: #fff;
+    position: absolute;
+    top: 53px;
+    left: 47.5px;
+}
+
+input[type="file"] {
+    position: absolute;
+    opacity: 0 ;
+    cursor: pointer;
+    z-index: 20;
+    width: 125px;
+    height: 125px;
+    font-size: 0;
+    outline: none;
+}

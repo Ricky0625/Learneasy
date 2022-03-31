@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/*welcome (student name*/ 
+.welcome-student p {
+    font-family: nunito;
+    font-weight: 700;
+    font-size: 2.34vw;
+    color: rgba(45,59,76,1);
+    margin-bottom: 3.58vw;
+    margin-left: 7.81vw;
+}
+
+/*quiz page content (title bar)*/
+.quiz-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*CSS for the bgcolor of the title bar*/
+.quiz-bar {
+    width: 100%;
+    height: 4.88vw;
+    background-color: rgba(45,59,76,1);
+}
+
+/*Quiz Item (Quiz title, search bar and quiz history button*/
+.quiz-bar-item {
+    width: 83.5vw;
+    height: 2.54vw;
+    margin-left: 7.81vw;
+    margin-top: 1.17vw;
+    margin-bottom: 1.17vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-quiz-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 12.3vw;
+}
+
+/*Quizzes*/
+.left-quiz-container p {
+    font-family: nunito;
+    font-size: 1.56vw;
+    font-weight: 700;
+    color: white;
+    margin-top: 0.2vw;
+    margin-bottom: 0.2vw;
+}
+
+/*Pen icon*/
+.icon-pen {
+    margin-left: 1vw;
+    margin-top: 0.57vw;
+    margin-bottom: 0.57vw;
+    display: flex;
+}
+
+.icon-pen i { 
+    font-size: 1.4vw;
+    color: white;
+}
+
+/*Question Mark icon*/
+.icon-question-mark {
+    margin-left: 1vw;
+    margin-top: 0.22vw;
+    margin-bottom: 0.22vw;
+    display: flex;
+}
+
+.icon-question-mark i {
+    font-size: 2.1vw;
+    color: rgba(255,107,88,1);
+    cursor: pointer;
+}
+
+/*Tooltiptext*/ 
+.icon-tooltiptext {
+    visibility: hidden;
+    width: 20vw;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 0.39vw;
+    position: absolute;
+    z-index: 1;
+    padding: 0.5vw 0;
+    margin-left: 3vw;
+}
+
+.icon-question-mark:hover .icon-tooltiptext {
+    visibility: visible;
+  }
+
+/*Content of Search column and quiz history button*/
+.right-quiz-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 37.5vw;
+    justify-content: space-between
+}
+
+.input-search {
+    height: 2.54vw;
+    width: 23.63vw;
+    border-radius: 1.3vw;
+    box-shadow: 0.33vw 0.26vw 0.33vw 0vw 0,0,0,0.25;
+    border: 0.06vw solid white;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-quiz input {
+    width: 20.63vw;
+    height: 100%;
+    border-radius: 1.3vw;
+    box-shadow: 0.33vw 0.26vw 0.33vw 0vw 0,0,0,0.25;
+    border: 0.06vw solid white;
+    background-color: white;
+    box-sizing: border-box;
+    outline: none;
+    padding-left: 1vw;
+    font-size: 1vw;
+    font-family: nunito;
+    font-weight: 700;
+    display: flex;
+}
+
+.search-quiz input::placeholder {
+    font-size: 0.98vw;
+    font-family: roboto;
+    font-weight: 400;
+    color:  rgba(45,59,76,0.5);
+    padding-left: 1vw;
+}
+
+.search-quiz button {
+    width: 2vw;
+    height: 2vw;
+    margin-top: 0.27vw;
+    margin-bottom: 0.27vw;
+    border: none;
+    background-color: white;
+    outline: none;
+}
+
+.search-quiz i {
+    font-size: 1.3vw;
+    display: flex;
+    color: rgba(45,59,76,1);
+    cursor: pointer;
+}
+
+/*Quiz History Button*/
+.quiz-history-btn button {
+    padding: 0.5vw 1.76vw;
+    background-color: rgba(255,107,88,1);
+    color: white;
+    font-size: 1.17vw;
+    font-family: nunito;
+    font-weight: 800;
+    border: none;
+    border-radius: 0.33vw;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+}
+
+.quiz-history-btn button:hover {
+    background-color: white;
+    color: rgba(45,59,76,1);
+}
+
+.quiz-card {
+    width: 100%;
+    height: 57vw;
+}
+
+/*quiz-empty page illustration*/
+img{
+    width: 41vw;
+    height: 35.87vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vw;
+}
+
+/*Words : (no quiz list display in the page)*/
+.quiz-card h2 {
+    font-size: 2.23vw;
+    font-weight: 800;
+    font-family: nunito;
+    color: rgba(45,59,76,1);
+    text-align: center;
+    margin-top: 2.93vw;
+}
+
+/*enroll button*/
+.enroll-btn button{
+    width: 16.28vw;
+    height: 3.26vw;
+    border-radius: 40px;
+    background-color: rgba(255,107,88,1);
+    color: white;
+    font-family: nunito;
+    font-size: 1.95vw;
+    font-weight: 800;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vw;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+
+.enroll-btn button:hover {
+    background-color: rgba(45,59,76,1);
+}

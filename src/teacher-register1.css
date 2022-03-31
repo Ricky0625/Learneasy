@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*Form title*/
+.form-title {
+    margin: 0;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 49px;
+    color: #2D3B4C;
+    margin: 28px 230px;
+}
+
+.teacher-register {
+    display: flex;
+    margin: 0 230px;
+    margin-bottom: 150px;
+    justify-content: space-between;
+}
+
+.tr-form {
+    width: fit-content;
+}
+
+.flex-label-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-space {
+    margin-top: 22px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.tr-label {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2D3B4C;
+}
+
+.tr-input-short {
+    width: 183px;
+    height: 45px;
+    background: #EAEBED;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: #2D3B4C;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.tr-input {
+    width: 335px;
+    height: 45px;
+    background: #EAEBED;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: #2D3B4C;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.lname {
+    margin-left: 20px;
+}
+
+.tr-paragraph {
+    color: rgba(45, 59, 76, 0.8);
+    margin: 5px 0px 8px 0px;
+    width: 400px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.password-showhide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.show-hide, #show-hide-pass {
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+    border-radius: 50%;
+    border: none;
+    margin: 0;
+    margin-left: 8px;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    color: #2D3B4C;
+    overflow: hidden;
+}
+
+#show-hide-pass, #show-hide-conpass {
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+    border-radius: 50%;
+    border: none;
+    margin: 0;
+    margin-left: 8px;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    color: #2D3B4C;
+    overflow: hidden;
+}
+
+#show-hide-conpass:hover, #show-hide-pass:hover{
+    background-color: #C0C3C6;
+    color: #fff;
+}
+
+#custom-button {
+    width: 118px;
+    height: 35px;
+    background-color: #FA8474;
+    border-radius: 5px;
+    padding: 6px 16px 7px 16px;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+#custom-button:hover {
+    background-color: #FF6B58;
+}
+
+#custom-text {
+    color: rgba(45, 59, 76, 0.8);
+    width: 200px;
+    height: 22px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    overflow: auto;
+    margin-left: 12px;
+}
+
+.upload-file {
+    align-items: center;
+}
+
+#terms {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#terms span {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+#terms a {
+    color: #FF6B58;
+}
+
+#register-btn {
+    width: 335px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #FA8474;
+    padding: 8px 120px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 31px;
+    cursor: pointer;
+}
+
+#register-btn:hover {
+    background-color: #FF6B58;
+}
+
+.flex-column {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.flex-column span {
+    margin-top: 12px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #2D3B4C;
+}
+
+.flex-column a {
+    color: #FF6B58;
+}
+
+.teacher-register img {
+    width: 528px;
+    height: 780px;
+}

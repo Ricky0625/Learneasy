@@ -1,0 +1,82 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24 Jan 2021, 2:55:01 pm
+    Author     : Ming En
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    text-decoration: none;
+
+}
+
+.filter{
+    margin-left: 300px;
+}
+
+/*filter button*/
+.filter-dropdown-btn{
+
+    color: white;
+    font-size: 0.9375VW;
+    font-family: Nunito;
+    font-weight: bold;
+    height: 1.875VW;
+    text-align: center;
+    width: 6.25VW;
+    cursor: pointer;
+    padding: 0.2604vw;
+    border: none;
+    outline:none;
+    background-color: #FF6B58;
+
+}
+
+/*filter dropdown box*/
+.filter-dropdown-container{
+    width: 10.81vw;
+    height: 5.99vw;
+    display: none;
+    text-align: center;
+    background: #2D3B4C;
+    opacity: 0.8;
+    border-radius: 10px;
+
+}
+
+/* button in dropdown box*/
+.dropdown-container input[type=submit] {
+    margin-bottom: auto;
+    border: none;
+    color: white;
+    background-color: #2D3B4C;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Nunito;
+    font-style: normal;
+    font-size: 0.91vw;
+    outline: none;
+}
+/*CSS for sort alphabet*/
+#alphabet{
+margin-top: 2vw;
+    border-bottom: 0.10vw solid white;
+    width: 80%;
+}
+
+
+.dropdown-container  input[type=submit]:hover{
+
+    color: red;
+
+}
+
+

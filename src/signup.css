@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container-register {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-bottom: 6.38vw;
+    margin-top: 7.16vw;
+}
+
+/*CSS of register form*/
+.registration-form{
+    margin-left: 14.3vw;
+    width: 45%;
+    height: 100%;
+    flex-direction: row;
+}
+
+.registration-title{
+    font-family: nunito ;
+    font-weight: 800;
+    font-size: 2.35vw;
+    color: rgba(45, 59, 76, 1) ;
+    margin: 0;
+}
+
+form {
+    margin-top: 2.54vw;
+}
+
+.details {
+    width: 21.81vw;
+    height: 5.21vw;
+    margin-bottom: 1.5vw;
+}
+
+label {
+    font-family: nunito ;
+    font-weight: 800;
+    font-size: 1.17vw;
+    color: rgba(45, 59, 76, 1);
+    line-height: 1.6vw;
+}
+
+.details input[type=text], [type=email] {
+    display: block;
+    width: 20.81vw;
+    height: 2.93vw;
+    background-color: rgba(234, 236, 237, 1);
+    border: none;
+    border-radius: 0.33vw;
+    font-family: nunito;
+    font-weight: 400;
+    font-size: 1vw;
+    outline: none;
+    padding-left: 1vw;
+}
+
+input[type=checkbox] {
+    width: 0.65vw;
+    height: 0.65vw;
+}
+
+.terms-conditions label {
+    font-size: 0.78vw;
+    font-family: nunito;
+    font-weight: 400;
+    color: #000000;
+}
+
+.terms-conditions label a {
+    color: rgba(255, 107, 88, 1);
+}
+
+.signup-button input {
+    width: 22.1vw;
+    height: 2.95vw;
+    border: none;
+    border-radius: 0.33vw;
+    background-color:  rgba(255, 107, 88, 1);
+    font-family: nunito ;
+    font-weight: 800;
+    font-size: 1.5vw;
+    color:rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+}
+
+.signup-button input:hover {
+    background-color: rgba(45, 59, 76, 1) ;
+}
+
+.have-account label {
+    font-size: 0.78vw;
+    font-family: nunito;
+    font-weight: 400;
+    color: #000000;
+    margin-left: 5.14vw;
+    line-height: 3em;
+    display: flex;
+}
+
+.have-account label a {
+    color: rgba(255, 107, 88, 1);
+}
+
+.illustration {
+    width: 55%;
+    flex-direction: row;
+    margin-right: 7.75vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.illustration img {
+    width: 41.15vw;
+    height: 25.85vw;
+}
+  
+.password-showhide {
+    width: 22.1vw;
+    height: 2.95vw;
+    background-color: rgba(234, 236, 237, 1);
+    border: none;
+    border-radius: 0.33vw;
+    margin-bottom: 1.5vw;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.password-showhide input {
+    width: 19.81vw;
+    background-color: rgba(234, 236, 237, 1);
+    border: none;
+    border-radius: 0.33vw;
+    font-family: nunito;
+    font-weight: 400;
+    font-size: 1vw;
+    outline: none;
+    padding-left: 1vw;
+    display: flex;
+}
+
+.password-showhide button {
+    width: 2vw;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+.password-showhide i{
+    font-size: 1vw;
+    display: flex;
+    background-color:rgba(234, 236, 237, 1);
+    cursor: pointer;
+}
+
+.password-showhide i:hover {
+    color: white;
+}

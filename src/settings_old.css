@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.page-padding {
+    padding: 0 140px;
+    margin-bottom: 120px;
+}
+
+.setting-page {
+    display: flex;
+    justify-content: space-between;
+}
+
+.setting-left {
+    width: 480px;
+    height: 380px;
+}
+
+.setting-flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color:#2D3B4C;
+    margin-bottom: 12px;
+}
+
+.setting-main-title {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    color: #2D3B4C;
+}
+
+.acc-info-label {
+    width: 102px;
+    height: 25px;
+}
+
+.fa-cog {
+    font-size: 22px;
+    color: #FF6B58;
+    margin-left: 8px;
+}
+
+.account-title {
+    margin: 12px 0;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FF6B58;
+}
+
+.setting-right {
+    display: flex;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    border-bottom: #888F98 solid 2px;
+}
+
+.setting-tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #2D3B4C;
+    width: 220px;
+    height: 415px;
+    border-radius: 10px 0 0 10px;
+}
+  
+/* Style the buttons inside the tab */
+.setting-tab button {
+  display: block;
+  background-color: transparent;
+  color: black;
+  padding: 14px 12px;
+  width: 200px;
+  height: 45px;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 19px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.first-link {
+    border-radius: 10px 0 0 0;
+}
+  
+.flex-row:hover .tablinks{
+  color: #FF6B58;
+}
+
+.flex-row:hover .tablinks + .fa-caret-right {
+    visibility: visible;
+    color: #FF6B58;
+}
+  
+  /* Create an active/current "tab button" class */
+.setting-tab button.active {
+  color: #FF6B58;
+  background-color: #2D3B4C;
+}
+
+.setting-tab button.active + .fa-caret-right{
+  visibility: visible;
+  color: #FF6B58;
+}
+  
+.fa-envelope, .fa-key {
+    margin-right: 10px;
+}
+
+.fa-user-times {
+    margin-right: 8px;
+}
+
+.fa-caret-right {
+    color: #fff;
+    visibility: hidden;
+}
+
+  /* Style the tab content */
+.tabcontent {
+    background-color: #2D3B4C;
+    float: left;
+    padding: 14px 30px;
+    width: 430px;
+    border: 2px solid #888F98;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+    height: 384px;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.setting-title {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FF6B58;
+}
+
+.small-title {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
+}
+
+.italic-text {
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FF6B58;
+    margin-top: 3px;
+}
+
+.input-field {
+    width: 350px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FF6B58;
+    margin-top: 5px;
+    padding: 8px 12px;
+}
+
+.setting-btn {
+    margin-top: 5px;
+    padding: 6px 18px;
+    width: fit-content;
+    height: 33px;
+    outline: none;
+    background-color: #ff6b58ce;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.setting-btn:hover {
+    background-color: #FF6B58;
+}
+
+.delete-acc {
+    background-color: #df4953b1;
+}
+
+.delete-acc:hover {
+    background-color: #df4953;
+}
+
+#profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+#fullname {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
+}
+
+#username {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: #CECECE;
+}
+
+.reminder-big {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.reminder-small {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.reminder-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: justify;
+    color: #91979D;
+    height: 100px;
+}

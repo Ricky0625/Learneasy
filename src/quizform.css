@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Roboto:wght@700&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/*Quiz Title/Quiz Reminder and Quiz Marks (CSS)*/
+.quiz-form-container {
+    width: 78.82vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.73vw;
+    margin-bottom: 5.27vw;
+}
+
+/*Quiz Title and Quiz Reminder*/
+.quiz-title {
+    width: 78.82vw;
+    height: 3.19vw;
+}
+
+p {
+    font-family: nunito;
+    font-weight: 700;
+    font-size: 2.34vw;
+    color: rgba(45, 59, 76, 1);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Display quiz reminder and quiz marks column*/
+.quiz-form-content {
+    width: 78.82vw;
+    height: 8.14vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vw;
+}
+
+.quiz-reminder {
+    height: 8.14vw;
+    width: 38.85vw;
+    display: flex;
+    flex-direction: row;
+}
+
+/*REMINDER : CSS*/
+.quiz-reminder h2 {
+    font-family: nunito;
+    font-weight: 700;
+    font-size: 1.17vw;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 0;
+    margin-bottom: 0vw;
+    width: 6vw;
+}
+
+/*Reminder Note */
+.quiz-reminder h3 {
+    width: 32.26vw;
+    margin-top: 0;
+    margin-bottom: 0vw;
+    font-family: nunito;
+    font-weight: 700;
+    font-size: 1.17vw;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 0.59vw;
+    word-wrap: break-word;
+}
+
+/*Quiz Marks Css*/
+.quiz-marks {
+    width: 13.87vw;
+    height: 3.97vw;
+    margin-left: 26.53vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.quiz-marks p {
+    font-family: nunito;
+    font-weight: 700;
+    font-size: 1.56vw;
+    color: rgba(45, 59, 76, 1);
+    width: 6.12vw;
+    margin-top: 0.98vw;
+    margin-bottom: 1.24vw;
+}
+
+.display-marks {
+    margin-left: 1vw;
+    width: 6.25vw;
+    height: 3.97vw;
+    border-bottom: 0.33vw solid rgba(255, 107, 88, 1);
+}
+
+.display-marks h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3vw;
+    color:rgba(255, 107, 88, 1);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*Quiz Quesrion Column Css*/
+.quiz-question {
+    width: 78.82vw;
+    height: 50vw;
+    margin-top: 1.82vw;
+    display: flex;
+    margin-bottom: 5vw;
+}
+
+/*Question and Answer Form Css*/
+.ques-answer {
+    width: 57.16vw;
+    height: 50vw;
+}
+
+/*Questions*/
+.mcq-question {
+    width: 57.16vw;
+    height: 1.89vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 1.What is your famous colours?*/
+.mcq-question h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.17vw;
+    color: black
+}
+
+.mcq-question h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.17vw;
+    color: rgba(0, 0, 0, 0.35);
+}
+
+/*MCQ-answer css*/
+.mcq-answer {
+    width: 57.16vw;
+    height: 11.46vw;
+    margin-top: 1vw;
+    border-bottom: 0.33vw solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.95vw;
+}
+
+/* The container */
+.mcq-choices {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100%;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.17vw;
+    color: black;
+    padding-top: 0.52vw;
+    padding-bottom: 0.52vw;
+    padding-left: 2.5vw;
+}
+
+/* Hide the browser's default radio button */
+.mcq-choices input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/*Customize new radio button css*/
+.checkmark {
+    position: absolute;
+    left: 0;
+    height: 1.3vw;
+    width: 1.3vw;
+    background: #FFFFFF;
+    border: 0.06vw solid #000000;
+    box-sizing: border-box;
+    border-radius: 50%;
+    top: 0.65vw;
+    bottom: 0.65vw;
+    margin-left: 0.5vw;
+}
+
+/*When Mouse-over, add a grey background color*/
+.checkmark:hover {
+    background-color: #ccc;
+    border: none;
+}
+
+/*When radio button is checked, add a orange border*/
+.mcq-choices input:checked ~ .checkmark {
+    background: #FFFFFF;
+    border: 0.06vw solid #FF6B58;
+    box-sizing: border-box;
+}
+
+.mcq-choices:hover {
+    background-color: rgba(255, 107, 88, 0.15);
+    height: 1.63vw;
+    width: 55vw;
+}
+
+/*Customize radio button -dot hidden when not checked*/
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.mcq-choices input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.mcq-choices .checkmark:after {
+    top: 0.315vw;
+    left: 0.315vw;
+    width: 0.6vw;
+    height: 0.6vw;
+    border-radius: 50%;
+    background: rgba(255, 107, 88, 1);
+}
+
+/*Timer and Back to Top button Css*/
+.right-quiz-container {
+    width: 13.8vw;
+    height: 31vw;
+    right: 9.9vw;
+    margin-left: 8vw;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: space-between;
+}
+
+.back-to-top-btn button {
+    display: none;
+    background-color: rgba(255, 107, 88, 1);
+    border-radius: 0.33vw;
+    padding: 0.85vw 0.78vw;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.back-to-top-btn button:hover {
+    background-color: rgba(45, 59, 76, 1) ;
+}
+
+.back-to-top-btn img {
+    width: 2.8vw;
+    height: 2.73vw ;
+}
+
+.timer {
+    width: 13.8vw;
+    height: 11.46vw;
+    background-color: white;
+    border: 0.26vw solid #2D3B4C;
+    box-sizing: border-box;
+    border-radius: 1.3vw;
+}
+
+/*Time Remains Css*/
+.timer p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.56vw;
+    color: rgba(45, 59, 76, 1);
+    text-align: center;
+    margin-top: 1.43vw;
+    width: 10.94vw;
+    height: 2.6vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 0.13vw solid rgba(45, 59, 76, 0.2);
+}
+
+/* JAVA timer box*/
+.time-set {
+    height: 4.04vw;
+    width: 10.94vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.17vw;
+}
+
+/*TIME CSS*/
+.time-set h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3vw;
+    color: rgba(255, 107, 88, 1);
+    margin: 0;
+}
+
+.time-set b {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.56vw;
+    color: rgba(255, 107, 88, 1);
+}
+
+/*Cancel and Submit button Css*/
+.quiz-btn {
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.cancel-btn button {
+    padding: 0.39vw 2.47vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: rgba(255, 107, 88, 1);
+    color: white;
+    font-family: nunito;
+    font-weight: 800;
+    font-size: 1.17vw;
+    display: flex;
+    border-radius: 0.33vw;
+    margin-right: 1.5vw;
+}
+
+.submit-btn button {
+    padding: 0.39vw 2.21vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: rgba(255, 107, 88, 1);
+    color: white;
+    font-family: nunito;
+    font-weight: 800;
+    font-size: 1.17vw;
+    display: flex;
+    border-radius: 0.33vw;
+}
+
+.submit-btn button:hover, .cancel-btn button:hover {
+    background-color: rgba(45, 59, 76, 1);
+}

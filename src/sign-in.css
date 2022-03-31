@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/*Background Images*/
+/*Behind Login Form*/
+.bottom-top-vertor {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+.bottom-top-vertor img {
+    width: 23.93vw;
+    height: 20vw;
+}
+
+.bottom-left-ellipse {
+    position: absolute;
+    left: 0px;
+    top: 46.16vw;
+    z-index: -1;
+}
+
+.bottom-left-ellipse img {
+    width: 20.96vw;
+    height: 20.5vw;
+}
+
+/*login Form Container*/
+.container-login {
+    width: 83.27vw;
+    height: 54.56vw;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6.05vw;
+    margin-bottom: 6.05vw;
+    border-radius: 4.88vw;
+    background: white;
+    box-shadow: 0 0.26vw 3.9vw 0.33vw rgba(45, 59, 76, 0.32);
+}
+
+/*Login Details/Information inside the container*/
+.login-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+/*Left Login Information*/
+.left-login-form {
+    width: 45%;
+    height: 100%;
+    flex-direction: row;
+}
+
+/*Learneasy Name*/
+.web-name p {
+    font-family: nunito;
+    font-size: 2.34vw;
+    color: #2D3B4C;
+    font-weight: 800;
+    font-style: normal;
+    margin-left: 7.68vw;
+    position: relative;
+    margin-top: 3.91vw;
+}
+
+.web-name b {
+    font-family: nunito;
+    font-size: 2.34vw;
+    color: #FF6B58;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/*Welcome Title*/
+.login-title {
+    width: 22vw;
+    height: 12.43vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8vw;
+}
+
+.login-title h2 {
+    font-family: nunito;
+    font-weight: 800;
+    font-size: 2vw;
+    color: rgba(45,59,76,1);
+    margin-bottom: -1vw;
+    text-align: center;
+}
+
+/*Sign In Button and Information*/
+div .sign-in-title {
+    width: 17.64vw;
+    height: 3.26vw;
+    color: rgba(45,59,76,1);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.sign-in-title h3 {
+    word-wrap: break-word;
+    font-family: nunito;
+    font-weight: 800;
+    font-size: 1.17vw;
+    line-height: 1.63vw;
+    color: #7d8185;
+}
+
+.sign-in-title button {
+    width: 12.83vw;
+    height: 2.93vw;
+    background: #FF6B58;
+    border-radius: 0.33vw;
+    font-family: nunito;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: 800;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sign-in-title button:hover {
+    background-color: rgba(45,59,76,1);
+    color: white;
+}
+
+/*Bottom illustration-login-form*/
+.illustration-login-form img {
+    width: 19.66vw;
+    height: 11.91vw;
+}
+
+.illustration-login-form {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 3vw;
+}
+
+/*Right Login Information*/
+.right-login-form {
+    width: 55%;
+    height: 100%;
+    flex-direction: row;
+    padding-top: 12.39vw;
+}
+
+.line-middle-form div {
+    height: 35vw;
+    width: 0.2vw;
+    background-color: #2D3B4C;
+}
+
+.line-middle-form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.login-acc-title h3 {
+    font-size: 2.34vw;
+    font-family: nunito;
+    font-weight: 800;
+    color: rgba(45,59,76,1);
+    margin-left: 11.2vw;
+    margin-right: 11.2vw;
+    text-align: center;
+}
+
+.account-login-information {
+    width: 20.18vw;
+    height: 20.64vw;
+    margin: 0 auto;
+}
+
+/*Account Information, fill in username and password*/
+.selection {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.seperateline-stu-and-tea {
+    height: 1.95vw;
+    background-color: rgba(255,107,88,1);
+    border: 0.1vw solid #FF6B58;
+    width: 0;
+}
+
+.selector-div {
+    position: relative;
+}
+
+.role-selection {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+  
+.selection-label {
+    display: inline-block;
+    background-color: #fff;
+    padding: 0.33vw 0.976vw;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.17vw;
+    line-height: 1.63vw;
+    border: 0.13vw solid #C0C0C0;
+    color: #C0C0C0;
+    border-radius: 0.33vw;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.role-selection:hover + label {
+    border-color: #2D3B4C;
+    color: #2D3B4C;
+}
+
+.role-selection:focus + label {
+    background-color: #FF6B58;
+}
+
+.role-selection:checked + label {
+    background-color: #FF6B58;
+    border-color: #FF6B58;
+    color: #fff;
+}
+
+/*Account Details - Username/Password*/
+.acc-details {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-top: 1.3vw;
+}
+
+input[type=text], [type=password] {
+    height:2.93vw;
+    width: 100%;
+    border-radius: 0.33vw;
+    background-color: rgba(234, 236, 237, 1) ;
+    box-shadow: 0.06vw 0.06vw 0.06vw rgba(0, 0, 0, 0.25);
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 1.17vw;
+    font-weight: 800;
+    font-family: nunito;
+    margin-bottom: 1.5vw ;
+    color: #2D3B4C;
+}
+
+input[type=text]::placeholder {
+    color: rgb(145, 146, 147);
+}
+
+input[type=password]::placeholder {
+    color: rgb(145, 146, 147);
+}
+
+.acc-details i {
+    font-size: 1.8vw;
+    color: #2D3B4C;
+    position: absolute; 
+    margin-top: 0.57vw; 
+    margin-bottom: 0.57vw;
+    margin-left: 1.37vw;
+}
+
+/*Account Details - Check Password*/
+input[type=checkbox] {
+    width: 1vw;
+    height: 1vw;
+    border: 0.06vw solid #2D3B4C;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.showpass {
+    display: flex;
+    align-items: center;
+}
+
+.showpass label {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9vw;
+    color: #2D3B4C;
+    margin-left: 0.65vw;
+}
+
+.sign-in-btn {
+    margin-top: 1.37vw;
+}
+
+input[type=submit] {
+    width: 20.2vw;
+    height: 2.93vw;
+    background: #FF6B58;
+    border-radius: 0.33vw;
+    font-family: nunito;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: 800;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type=submit]:hover {
+    background-color:#2D3B4C;
+    color: white;
+}
+
+/*Roles selection color*/
+.selection input.active {
+    border: 0.2vw solid #2D3B4C;
+    box-sizing: border-box;
+    border-radius: 0.33vw;
+}

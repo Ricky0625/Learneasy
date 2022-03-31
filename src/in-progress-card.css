@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.enrolled-card {
+    width: 580px;
+    height: 270px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 26px 5px rgba(45, 59, 76, 0.2);
+    display: flex;
+    margin: 0 9px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.enrolled-card:hover {
+    transform: scale(1.01);
+}
+
+.enrolled-card img {
+    width: 200px;
+    height: 270px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.enrolled-course-info {
+    padding: 28px 20px;
+}
+
+.enrolled-course-info a {
+    text-decoration: none;
+}
+
+.enrolled-course-name {
+    margin: 0;
+    width: 340px;
+    height: 40px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    color: #2D3B4C;
+}
+
+.enrolled-course-teacher {
+    margin: 12px 0;
+    margin-top: 24px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(45, 59, 76, 0.5);
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+
+.enrolled-date {
+    margin-bottom: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(45, 59, 76, 0.5);
+}
+
+.en-tags-unenroll {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.in-progress-tag {
+    padding: 4px 14px 2px 14px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FF6B58;
+    border: 2px solid #FF6B58;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.unenroll-btn {
+    padding: 5px 12px;
+    background-color: #fa8070;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    transition: 0.3s;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.unenroll-btn:hover {
+    background-color: #FF6B58;
+}
+
+.completed-tag {
+    padding: 4px 14px 4px 14px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    border-radius: 30px;
+    background-color: #FF6B58;
+}
+
+.certificate-btn{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #fa8070;
+    padding: 8px 12px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.certificate-btn:hover{
+    background-color: #FF6B58;
+}

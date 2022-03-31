@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.welcome-banner {
+    padding: 0 120px;
+    margin-bottom: 36px;
+}
+
+.welcome-banner span {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    color: #2D3B4C;
+}
+
+.welcome-banner span.greeting-teacher-name {
+    color: #FF6B58;
+}
+
+.create-course-hero {
+    position: relative;
+    height: 500px;
+    align-items: center;
+}
+
+.create-course-hero video {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    opacity: 0.85;
+    position: absolute;
+    filter: grayscale(0.4);
+}
+
+.hero-title-button {
+    position: absolute;
+    padding: 165px 150px; 
+}
+
+.hero-title-button p{
+    width: 400px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 55px;
+    color: #FFF;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.hero-title-button a {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 31px;
+    color: #FFFFFF;
+    padding: 7px 28px;
+    background-color: #F08275;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hero-title-button a:hover {
+    background-color: #FF6B58;
+}
+
+.my-course {
+    padding: 52px 80px;
+}
+
+.mycourse-title {
+    text-align: center;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 46px;
+    color: #2D3B4C;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.create-course-button {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.view-more-mycourse {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFF;
+    background-color:#F08275;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px 12px;
+    transition: .3s;
+    margin-right: 26px;
+}
+
+.view-more-mycourse:hover {
+    background-color: #FF6B58;
+}
+
+.teacher-course-list {
+    display: flex;
+    margin-top: 28px;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    margin: 14px 26px;
+}
+
+.tab-empty-state {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  
+  .tab-empty-state img {
+    margin-top: 1.3vw;
+    width: 13.02vw;
+  }
+  
+  .tab-empty-state p {
+    text-align: center;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.04vw;
+    line-height: 1.43vw;
+    color: #2D3B4C;
+  }

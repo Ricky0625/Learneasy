@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.course-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 2.6vw;
+}
+
+/*title bar column css*/
+.title-bar {
+    width: 100%;
+    height: 4.17vw;
+    background-color: rgba(45, 59, 76, 1);
+    margin-bottom: 5vw;
+}
+ 
+.title-content {
+    width: 83.5vw;
+    height: 2.34vw;
+    margin-left: 7.81vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.91vw;
+    margin-bottom: 0.91vw;
+    justify-content: space-between;
+}
+
+/*left container consist of title and search bar*/
+.left-container {
+    height: 100%;
+    width: 56.18vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*My course css*/
+.left-container p {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.56vw;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/*Search Bar Css*/
+.input-search {
+    height: 2.34vw;
+    width: 23.63vw;
+    border-radius: 1.3vw;
+    box-shadow: 0.33vw 0.26vw 0.33vw 0vw 0,0,0,0.25;
+    border: 0.06vw solid white;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+/*search input box*/
+.input-search input {
+    width: 20.63vw;
+    height: 100%;
+    border-radius: 1.3vw;
+    box-shadow: 0.33vw 0.26vw 0.33vw 0vw 0,0,0,0.25;
+    border: 0.06vw solid white;
+    background-color: white;
+    box-sizing: border-box;
+    outline: none;
+    padding-left: 1vw;
+    font-size: 1vw;
+    font-family: nunito;
+    font-weight: 700;
+    display: flex;
+}
+
+.input-search input::placeholder {
+    font-size: 0.98vw;
+    font-family: roboto;
+    font-weight: 400;
+    color:  rgba(45,59,76,0.5);
+    padding-left: 1vw;
+}
+
+.input-search button {
+    width: 1.24vw;
+    height: 1.17vw;
+    margin-top: 0.59vw;
+    margin-bottom: 0.59vw;
+    border: none;
+    background-color: white;
+    outline: none;
+}
+
+.input-search button i {
+    font-size: 1vw;
+    display: flex;
+    color: rgba(45,59,76,1);
+    cursor: pointer;
+}
+
+/*Right container consist of create course and filter button*/
+.right-container {
+    height: 100%;
+    width: 17.77vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+/*Create Course Button*/
+.create-course-btn a {
+    text-decoration: none;
+    padding: 0.35vw 1.3vw;
+    background-color: rgba(255, 107, 88, 1);
+    border: none;
+    box-sizing: border-box;
+    border-radius: 0.33vw;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.17vw;
+    color: white;
+    display: flex;
+    cursor: pointer;
+}
+
+.create-course-btn a:hover {
+    background-color: white;
+    color: rgba(45, 59, 76, 1);
+}
+
+/*Column to fill course card box css*/
+.course-container {
+    width: 71.55vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vw;
+}
+
+/*Course Container Css*/
+.course-card {
+    width: 71.55vw ;
+    height: 17vw;
+    border: 0.18vw solid #2D3B4C;
+    box-sizing: border-box;
+    border-radius: 0.3vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.course-cover {
+    width: 24.02vw;
+    height: 16.65vw;
+}
+
+/*course cover css*/
+.course-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.3vw;
+}
+
+/*course content css*/
+.course-content {
+    width: 42.32vw;
+    height: 13.87vw;
+    margin: auto;
+}
+
+/*Course Title*/
+.course-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.course-title p {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.82vw;
+    color: rgba(45, 59, 76, 1);
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 30vw;
+    height: 5vw;
+    word-wrap: break-word;
+}
+
+/*Course Catogory Tag*/
+.course-title button {
+    width: auto;
+    padding: 0 1.76vw;
+    height: 2.28vw;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(45, 59, 76, 1);
+    border-radius: 1.3vw;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.07vw;
+}
+
+/*Course Created By? Teacher Name*/
+.course-details {
+    margin-top: 1.5vw;
+}
+
+.course-details h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.07vw;
+    color: rgba(45, 59, 76, 0.5);
+    margin-bottom: 0;
+}
+
+/*Published Date*/
+.course-details h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.07vw;
+    color: rgba(45, 59, 76, 0.5);
+    margin-top: 1.13vw;
+    margin-bottom: 0;
+}
+
+/*Css for Edit button and Delete button*/
+.course-btn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.3vw;
+    float: right;
+}
+
+.Edit-btn a {
+    width: 6.58vw;
+    height: 2.47vw;
+    background: #FF6B58;
+    border-radius: 0.3vw;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.43vw;
+    color: white;
+    display: flex;
+    padding: 0.35vw 1.9vw;
+    text-decoration: none;
+    margin-left: 0.85vw;
+}
+
+.Edit-btn a:hover {
+    background-color: white;
+    color: rgba(45, 59, 76, 1);
+}
+
+.View-btn a {
+    width: 6.58vw;
+    height: 2.47vw;
+    background: #FF6B58;
+    border-radius: 0.3vw;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.43vw;
+    color: white;
+    display: flex;
+    padding: 0.35vw 1.56vw;
+    text-decoration: none;
+}
+
+.View-btn a:hover {
+    background-color: white;
+    color: rgba(45, 59, 76, 1);
+}
+
+
+  

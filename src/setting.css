@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.page-padding {
+    padding: 0 9.11vw;
+    margin-bottom: 7.8125VW;
+}
+
+.setting-page {
+    display: flex;
+    justify-content: space-between;
+}
+
+.setting-left {
+    width: 31.25VW;
+    height: 24.74VW;
+}
+
+.setting-flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.17VW;
+    line-height: 1.63VW;
+    color:#2D3B4C;
+    margin-bottom: 0.78VW;
+}
+
+.setting-main-title {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.08VW;
+    line-height: 2.86VW;
+    color: #2D3B4C;
+}
+
+.acc-info-label {
+    width: 6.64VW;
+    height: 1.63VW;
+}
+
+.fa-cog {
+    font-size: 1.43VW;
+    color: #FF6B58;
+    margin-left: 0.52VW;
+}
+
+.account-title {
+    margin: 0.78VW 0;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5625VW;
+    line-height: 2.15W;
+    color: #FF6B58;
+}
+
+.setting-right {
+    display: flex;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    border-bottom: #888F98 solid 0.13VW;
+}
+
+.setting-tab {
+    float: left;
+    border: 0.065VW solid #ccc;
+    background-color: #2D3B4C;
+    width: 14.32VW;
+    height: 27.02VW;
+    border-radius: 0.65VW 0 0 0.65VW;
+}
+  
+/* Style the buttons inside the tab */
+.setting-tab button {
+  display: block;
+  background-color: transparent;
+  color: black;
+  padding: 0.91VW 0.78125VW;
+  width: 13.02VW;
+  height: 2.93VW;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.24VW;
+  font-size: 0.911VW;
+  color: #fff;
+}
+
+.first-link {
+    border-radius: 0.65VW 0 0 0;
+}
+  
+.flex-row:hover .tablinks{
+  color: #FF6B58;
+}
+
+.flex-row:hover .tablinks + .fa-caret-right {
+    visibility: visible;
+    color: #FF6B58;
+}
+  
+  /* Create an active/current "tab button" class */
+.setting-tab button.active {
+  color: #FF6B58;
+  background-color: #2D3B4C;
+}
+
+.setting-tab button.active + .fa-caret-right{
+  visibility: visible;
+  color: #FF6B58;
+}
+  
+.fa-envelope, .fa-key {
+    margin-right: 0.65VW;
+}
+
+.fa-user-times {
+    margin-right: 0.52VW;
+}
+
+.fa-caret-right {
+    color: #fff;
+    visibility: hidden;
+}
+
+  /* Style the tab content */
+.tabcontent {
+    background-color: #2D3B4C;
+    float: left;
+    padding: 0.91VW 1.95VW;
+    width: 28VW;
+    border: 0.13VW solid #888F98;
+    border-left: none;
+    border-radius: 0 0.65VW 0.65VW 0;
+    height: 25VW;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0.78VW;
+}
+
+.setting-title {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.17VW;
+  line-height: 1.63VW;
+  color: #FF6B58;
+}
+
+.small-title {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.91VW;
+    line-height: 1.24VW;
+    color: #fff;
+}
+
+.italic-text {
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 0.91VW;
+    line-height: 1.24VW;
+    color: #FF6B58;
+    margin-top: 0.2VW;
+}
+
+.input-field {
+    width: 22.79VW;
+    border-radius: 0.33VW;
+    outline: none;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.04VW;
+    line-height: 1.43VW;
+    color: #FF6B58;
+    margin-top: 0.33VW;
+    padding: 0.52VW 0.78125VW;
+}
+
+.setting-btn {
+    margin-top: 0.33VW;
+    padding: 0.39VW 1.172VW;
+    width: fit-content;
+    height: 2.15VW;
+    outline: none;
+    background-color: #ff6b58ce;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.04VW;
+    line-height: 1.43VW;
+    color: #fff;
+    border: none;
+    border-radius: 0.33VW;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.setting-btn:hover {
+    background-color: #FF6B58;
+}
+
+.delete-acc {
+    background-color: #df4953b1;
+}
+
+.delete-acc:hover {
+    background-color: #df4953;
+}
+
+#profile-pic {
+    width: 2.6VW;
+    height: 2.6VW;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+#fullname {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.91VW;
+    line-height: 1.23VW;
+    color: #fff;
+}
+
+#username {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.78125VW;
+    line-height: 1.04VW;
+    color: #CECECE;
+}
+
+.reminder-big {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.04VW;
+    line-height: 1.43VW;
+    color: #fff;
+    margin-bottom: 0.52VW;
+}
+
+.reminder-small {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.91VW;
+    line-height: 1.24VW;
+    color: #FFFFFF;
+}
+
+.reminder-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.911VW;
+    line-height: 1.04VW;
+    text-align: justify;
+    color: #91979D;
+    height: 6.51VW;
+}
