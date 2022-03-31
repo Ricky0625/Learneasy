@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.top-hero {
+    position: relative;
+    margin: 0 7.94vw;
+    padding: 0 1.04166vw;
+    width: 77.86vw;
+    height: 32.55vw;
+}
+
+#visitor-home-illu {
+    width: 100%;
+    height: 32.55vw;
+    position: absolute;
+}
+
+.title-button {
+    position: absolute;
+    top: 8.46vw;
+}
+
+.hero-title {
+    margin: 0;
+    width: 34.24vw;
+    height: 9.375vw;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.776vw;
+    line-height: 4.6875vw;
+    color: #2D3B4C;
+}
+
+.hero-subtitle {
+    margin-top: 0.78vw;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5625vw;
+    line-height: 2.15vw;
+    color: rgba(45, 59, 76, 0.7);
+}
+
+.browse-course{
+    margin-top: 0.78vw;
+    text-decoration: none;
+    padding: 0.59vw 1.042vw;
+    background-color: #FA8474;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.17vw;
+    line-height: 1.63vw;
+    color: #fff;
+    border-radius: 0.33vw;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.browse-course:hover {
+    background-color:#FF6B58;
+}
+
+.course-carousel {
+    height: 34.18vw;
+    margin-top: 2.083vw;
+    background-color: rgba(178, 213, 230, 0.3);
+    padding: 2.344vw 6.77vw;
+}
+
+.carousel-title {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.34375vw;
+    line-height: 3.19vw;
+    color: #2D3B4C;
+    margin-bottom: 0.78vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 76.17vw;
+}
+
+.carousel-tab {
+    overflow: hidden;
+    background-color: transparent;
+    margin-left: 0.65vw;
+    width: 76.17vw;
+    margin: 0 auto;
+  }
+  
+/* Style the buttons inside the tab */
+.carousel-tab button {
+    background-color: transparent;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.39vw 0.91vw;
+    transition: 0.3s;
+    font-size: 1.17vw;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.63vw;
+    color: rgba(45, 59, 76, 0.8);
+    border-radius: 1.3vw;
+    margin-right: 1.3vw;
+}
+
+/* Change background color of buttons on hover */
+.carousel-tab button:hover {
+    color: #2D3B4C;
+}
+
+/* Create an active/current tablink class */
+.carousel-tab button.active {
+    background-color: #B2D5E6;
+    color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    border-top: none;
+    padding: 0 0 2.8vw 0;
+    width: 78.125vw;
+    margin: 0 auto;
+}
+
+.view-more-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 76.82vw;
+    margin: 0 auto;
+}
+
+.view-more-course {
+    padding: 0.195vw 0.911vw;
+    font-family: Nunito;
+    font-style: normal; 
+    font-weight: 600;
+    font-size: 1.17vw;
+    line-height: 1.63vw;
+    color: #fff;
+    text-decoration: none;
+    background-color:#FA8474;
+    border-radius: 0.33vw;
+    transition: 0.3s;
+}
+
+.view-more-course:hover {
+    background-color: #FF6B58;
+}
+
+.carousel-flex {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.3vw;
+    width: 1200px;
+}
+
+.recruit-teacher {
+    padding: 2.6vw 7.94vw 3.26vw 7.94vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#recruit-illu {
+    width: 37.9vw;
+    height: 23.942vw;
+}
+
+.recruit-text {
+    margin-right:3.26vw;
+}
+
+.bigtext {
+    display: flex;
+    flex-direction: column;
+}
+
+.bigtext-blue {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.99vw;
+    line-height: 3.32vw;
+    color: #2D3B4C;
+}
+
+.bigtext-orange {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.99vw;
+    line-height: 3.32vw;
+    color:#FF6B58;
+}
+
+.recruit-paragraph {
+    margin: 0.91vw 0 1.3vw 0;
+    width: 29.62vw;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.17vw;
+    line-height: 1.63vw;
+    text-align: justify;
+    color: #2d3b4cce;
+}
+
+.learn-more {
+    padding: 0.52vw 1.042vw;
+    background-color: #FA8474;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.172vw;
+    line-height: 1.63vw;
+    text-decoration: none;
+    border-radius: 0.33vw;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #FF6B58;
+}
+
+.course-card {
+    margin: 0 0.65vw;
+}

@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.profile-section {
+    position: relative;
+    margin: 0px 221px;
+}
+
+.cover {
+    position: absolute;
+}
+
+.container {
+    width: 998px;
+    height: 225px;
+    border-radius: 15px;
+}
+
+.profile-cover {
+    position: absolute;
+    object-fit: cover;
+}
+
+.overlay-blur {
+    z-index: 2;
+    background-color: #fff;
+    opacity: 0.2;
+}
+
+#profile-pic{
+    width: 187px;
+    height: 187px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    border: 4px solid #ff6b58;
+    z-index: 30;
+    margin: 164px 0px 0px 102px;
+}
+
+.user-info{
+    position: absolute;
+    margin: 241px 101px 0 318px;
+    width: 578px;
+    height: fit-content;
+    max-height: 225px;
+}
+
+.fullname-and-edit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fullname {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: left;
+    color: #2D3B4C;
+}
+
+.fullname p {
+    margin: 0;
+}
+
+.fas-check-circle {
+    font-size: 8px;
+}
+
+.fullname .last-name {
+    margin-left: 8px;
+}
+
+.edit-profile-button {
+    text-decoration: none;
+    color: white;
+    background-color: #ee7362;
+    width: 150px;
+    height: 34px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.edit-profile-button:hover {
+    background-color: #ff6b58;
+}
+
+.edit-profile {
+    display: flex;
+    padding: 5px 12px 5px 12px;
+}
+
+.edit-profile-label {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.edit-profile i {
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.username {
+    margin: 5px 0 0 0;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+    color: rgba(45, 59, 76, 0.8);
+}
+
+.join-date {
+    display: flex;
+    width: fit-content;
+    margin-top: 5px;
+}
+
+.join-date i {
+    color: #ff6b58;
+    margin-top: 4px;
+}
+
+.join-date p {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+    color: rgba(45, 59, 76, 0.8);
+    margin: 0;
+    margin-left: 12px;
+}
+
+.user-bio {
+    display: flex;
+    margin-top: 5px;
+}
+
+.user-bio i {
+    color: #ff6b58;
+    margin-top: 3px;
+}
+
+.user-bio p {
+    margin: 0;
+    margin-left: 12px;
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(45, 59, 76, 0.8);
+    width: fit-content;
+    max-width: 466px;
+    height: fit-content;
+    max-height: 100px;
+}
+
+.course-stats {
+    display: flex;
+    margin: 500px 424px 200px 425px;
+}
+
+.num-of-course {
+    background-color: #2D3B4C;
+    padding: 16px 22px 26px 22px;
+    border-radius: 10px;
+}
+
+.nof-icon-label {
+    display: flex;
+}
+
+.nof-icon-label i {
+    color: white;
+    margin-top: 3px;
+}
+
+.nof-icon-label p {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+    color: white;
+    margin-left: 8px;
+}
+
+.nof-value {
+    margin: 0;
+    width: 241.062px;
+    height: fit-content;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 76px;
+    text-align: center;
+    color: #ff6b58;
+}
+
+.fav-course {
+    border: 3px solid #2D3B4C;
+    padding: 16px 52px 46px 52px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.fav-icon-label {
+    display: flex;
+}
+
+.fav-icon-label i {
+    color: #2D3B4C;
+    margin-top: 4px;
+}
+
+.fav-icon-label p {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+    color: #2D3B4C;
+    margin-left: 8px;
+    background-color: #fff;
+}
+
+.fav-course-value {
+    width: 175.025px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    margin: 5px 0 0 0;
+    color: #ff6b58;
+}

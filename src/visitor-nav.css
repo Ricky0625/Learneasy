@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.top-nav-bar {
+    position: relative;
+    margin: 2.6vw 7.8vw 3.2vw 7.8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-end;
+    z-index: 100;
+}
+
+.left-nav {
+    width: 52vw;
+    display: flex;
+    justify-content: space-between;
+    z-index: 50;
+}
+
+#Learneasy-logo {
+    width: fit-content;
+}
+
+#learneasy-logo img {
+    width: 11.13vw;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+}
+
+nav .main-menu>li {
+    display: inline-block;
+    margin-right: 0.65vw;
+    z-index: 50;
+}
+
+nav a{
+    margin: 0;
+    text-align: left;
+    color: #5F708E;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.17vw;
+    line-height: 1.63vw;
+    position: relative;
+    display: block;
+    padding: 0.65vw 1.3vw;
+}
+
+nav li:hover>a {
+    color: #2D3B4C;
+    cursor: pointer;
+}
+
+nav .sub-menu {
+    position: absolute;
+    display: none;
+}
+
+nav .sub-menu li a {
+    text-decoration: none;
+    list-style: none;
+    background-color: #5F708E;
+    color: white;
+}
+
+nav .sub-menu li a:hover {
+    background-color: #2D3B4C;
+}
+
+nav .main-menu>li:hover .sub-menu{
+    display: block;
+}
+
+.right-nav {
+    display: flex;
+}
+
+.right-nav a{
+    text-decoration: none;
+}
+
+.right-nav .sign-in {
+    width: 6.12vw;
+    height: 1.89vw;
+    padding: 0.39vw 0.78vw 0.295vw 0.78vw;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.823vw;
+    font-size: 1.042vw;
+    color: #fff;
+    background-color: #ff6b58;
+    text-align: center;
+    border-radius: 0.326vw;
+}
+
+.right-nav .sign-up {
+    width: 6.12vw;
+    height: 1.89vw;
+    padding: 0.195vw 0.78vw 0vw 0.78vw;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.628vw;
+    font-size: 1.042vw;
+    color: #ff6b58;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 0.326vw;
+    border: #ff6b58 solid 0.26vw;
+    margin: 0 0 0 2.15vw;
+}

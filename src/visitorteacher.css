@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.visitor-info {
+    display: flex;
+    height: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.top-title-visitor {
+    height: 55vw;
+    width: 100%;
+}
+
+/*Title background image*/
+.image-title img{
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    width: 37vw;
+    height: 16vw;
+    margin-top: 11.26vw;
+    margin-left: 7.81vw;
+    position: absolute;
+}
+
+/*Title (Bringing Excellence to Students*/
+.title p {
+    font-family: nunito;
+    width: 100%;
+    word-wrap: break-word;
+    font-size: 3.91vw;
+    font-weight: 700;
+    color: rgba(45,59,76,1);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*Sub Title (A new way to learn for students*/
+.sub-title h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: nunito;
+    font-size: 1.56vw;
+    font-weight: 700;
+    color: rgba(45,59,76,0.7);
+}
+
+/*Sign Up button*/
+.sign-up-button-teacher button{
+     width: 14.58vw;
+     height: 2.6vw;
+     border: none;
+     border-radius: 0.33vw;
+     background-color: rgba(255,107,88,1);
+     outline: none;
+     color: white;
+     font-size: 1.17vw;
+     font-family: nunito;
+     font-weight: 800;
+     margin-top: 1vw;
+     cursor: pointer;
+}
+
+.sign-up-button-teacher button:hover {
+    background-color: rgba(45,59,76,0.7);
+}
+
+/*Middle Intro /About Us Css*/
+.mid-intro {
+    width: 100%;
+    height: 34.44vw;
+    background-color: rgba(229,229,229,1);
+    margin-top: -5vw;
+}
+
+.intro-words {
+    width: 23.18vw;
+    height: 16.47vw;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 15vw;
+    position: absolute;
+}
+
+/*A success-oriented learning environment*/
+.intro-words p {
+    color: rgba(45,59,76,1);
+    font-size: 2.21vw;
+    font-family: nunito;
+    font-weight: 800;
+    word-wrap: break-word;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/*Educating students in the richness of their past, the diversity
+of their present and the possibilities for their future*/
+.sub-intro h3 {
+    color: rgba(45,59,76,0.7);
+    font-size: 1.15vw;
+    font-family: nunito;
+    font-weight: 800;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.about-us-button-intro button {
+    width: 11.07vw;
+    height: 2.6vw;
+    background-color: rgba(255,107,88,1);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 0.33vw;
+    font-family: nunito;
+    font-size: 1.17vw;
+    font-weight: 800;
+    cursor: pointer;
+    margin-top: 1vw;
+    margin-left: 6.21vw;
+    margin-right: 6.21vw;
+}
+
+.about-us-button-intro button:hover {
+    background-color: rgba(45,59,76,0.7);
+}
+
+.image-middle img {
+    margin-left: 12vw ;
+    margin-top: 2vw;
+    width: 76.82vw;
+    height: 28.84vw;
+}
+
+/*Bottom visitor page -description*/
+.bottom-des {
+    width: 70%;
+    height: 17.51vw;
+    left: 15%;
+    right: 15%;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-des {
+    width: 40%;
+    height: 100%;
+    background-color: rgba(255,107,88,0.5);
+    border: none;
+    border-radius: 10px;
+}
+
+.image-des img {
+    height: 13vw;
+    width: 8vw ;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.21vw;
+}
+
+.des-learneasy {
+    width: 60%;
+    height: 100%;
+}
+
+.des-content {
+    width: 39.40vw;
+    height: 10.68vw;
+    margin-top: 3vw;
+    margin-left: 3vw;
+}
+
+/*How does Learneasy works*/
+.des-content p {
+    font-family: nunito;
+    font-weight: 700;
+    font-size: 2.21vw;
+    color: rgba(45,59,76,1);
+    margin-bottom: 0;
+}
+
+.des-content b {
+    font-family: nunito;
+    font-weight: 700;
+    font-size: 2.21;
+    color: rgba(255,107,88,1);
+}
+
+/*Top teachers from all over the world teach the students that learning on learneasy. We can give you the means to teach what you love*/
+.des-content h3 {
+    font-family: nunito;
+    font-weight: 700;
+    font-size: 1.37vw;
+    color: rgba(45,59,76,0.7);
+    word-wrap: break-word;
+    line-height: 32.742.13vw;
+}
